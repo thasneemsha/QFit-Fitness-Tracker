@@ -5,7 +5,7 @@ Q-Fit is a free, student-friendly gym progress tracker developed for CS 370 that
 
 Built using JSP for the presentation layer, Java servlets for processing, JSON-based API communication, MySQL for persistent storage, and deployed on an AWS EC2 instance running Apache Tomcat, Q-Fit is a classic three-tier web application that demonstrates textbook software engineering principles.
 
-The project fully supports the three required actors as specified by Professor Bon Sy:
+The project fully supports the three required actors as specified:
 
 - **User (Student/Gym Member)** – the primary actor who tracks personal progress  
 - **Admin** – the secondary actor responsible for system integrity and user oversight  
