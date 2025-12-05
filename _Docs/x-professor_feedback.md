@@ -1,16 +1,17 @@
 # 📝 Professor Feedback & System Revisions
-**QFit Workout Tracker — API-Integrated Version**  
-This document summarizes all feedback from the professor and how our team revised the system accordingly.
+**QFit Workout Tracker — Final API-Integrated Version**  
+This document summarizes **all professor feedback**, our **revisions**, and the **design decisions** for removing coach/payment features.
 
 ---
 
 # 1. User Role
 
 ## 1.1 Feedback from Professor
-- Users should be able to log workouts, view history, track progress, and set goals.
+- Users should log workouts, view history, track progress, and set goals.
 - API integration should allow future mobile clients to access user data.
 - Progress dashboards should reflect real-time performance metrics.
 - Security: Users must only access their own data.
+- Originally, coach feedback and coach-related features were suggested.
 
 ## 1.2 Our Revisions
 - Added **POST API endpoints** for logging workouts.
@@ -18,6 +19,8 @@ This document summarizes all feedback from the professor and how our team revise
 - Progress charts now powered by **API data**, supporting volume, PR trends, and consistency.
 - Profile updates and password changes are accessible via **API + UI**.
 - Security updated: only authenticated users can access their own data.
+- **Coach role removed**: After discussion, we decided students can log and view their own progress without a coach. The API allows future expansion if needed.
+- **Payment/subscription features removed**: QFit is fully free for students.
 
 ---
 
@@ -27,14 +30,17 @@ This document summarizes all feedback from the professor and how our team revise
 - Coaches should view assigned users and their workout history.
 - Coaches should submit feedback and see historical feedback.
 - API endpoints should support these actions for dashboard/mobile integration.
-- Use standardized JSON response format for consistency.
 
-## 2.2 Our Revisions
-- Coach login supports elevated privileges.
-- View assigned users via **UI + API**.
-- Retrieve workout history and progress trends via **API**.
-- Submit, update, and delete feedback through **UI + POST/PUT/DELETE API endpoints**.
-- All coach API responses use **standardized JSON format**.
+## 2.2 Our Revisions / Decisions
+- **Coach role removed** entirely to simplify the system scope for the semester.
+- Student users now manage their own workouts and goals.
+- All features previously suggested for coaches were either integrated into **User dashboards** or removed.
+- API support remains for workouts, progress, and feedback (future-proofing).
+
+### Why Removed
+- Time and scope constraints for semester project.
+- Focused on **student self-tracking**, making the system fully functional without dependency on coach inputs.
+- Simplifies security and reduces complexity in backend and API design.
 
 ---
 
@@ -51,18 +57,20 @@ This document summarizes all feedback from the professor and how our team revise
 - Activate/deactivate accounts via **PUT/POST API**.
 - Password reset via **UI + API**.
 - Manage system roles via **API endpoint**.
-- Retrieve system-wide analytics through **Analytics API** (active users, workouts, coach feedback, etc.).
+- Retrieve system-wide analytics through **Analytics API**.
 - Access system logs via **secured API routes**.
 - Support external integrations with **API keys/tokens**.
+- Payment/subscription management removed — system is free, no billing functionality.
 
 ---
 
 # 4. Functional Requirements (FR)
 
 ## 4.1 Feedback from Professor
-- All user, coach, and admin functionality must support **UI + API**.
+- All user and admin functionality should support **UI + API**.
 - Workouts, progress tracking, and feedback should be **API-powered**.
 - Data access must be secure and role-based.
+- Initially suggested coach features (feedback, assigned users) and monetization were optional.
 
 ## 4.2 Our Revisions
 
@@ -70,42 +78,37 @@ This document summarizes all feedback from the professor and how our team revise
 - Log workouts via UI + `POST /api/workouts`.
 - View workout history via UI + GET API.
 - View progress charts via API.
-- View coach feedback via UI + API.
-- Profile management via UI + API.
+- Manage profile via UI + API.
 - Secure access: users can only see their own data.
+- Coach features removed; students manage their own progress.
+- System is fully free; no subscription/payment required.
 
-### Coach (FR-2)
-- Coach login with elevated privileges.
-- View assigned users (UI + API).
-- Retrieve workout history via JSON API.
-- Analyze progress trends via API.
-- Submit/update/delete feedback via UI + API.
-- Standardized JSON response for all coach endpoints.
-
-### Admin (FR-3)
+### Admin (FR-2)
 - Admin login with full privileges.
 - View all users (UI + GET API).
 - Activate/deactivate accounts (UI + PUT API).
 - Reset passwords (UI + POST API).
-- Manage system roles (UI + API).
-- View system analytics via API.
+- Manage user roles (UI + API).
+- View analytics via API.
 - Access system logs via API.
 - Support external integrations with API keys/tokens.
 
 ---
 
-# 5. Summary of Changes
-| Role | Feedback | Revision |
-|------|---------|----------|
-| User | Needs API integration for logging, history, progress | Added POST/GET API endpoints, progress dashboards powered by API |
-| Coach | Feedback, history, progress via API | Added standardized JSON API endpoints for workouts and feedback |
-| Admin | All management tasks should support API | Admin endpoints for users, roles, passwords, logs, metrics, integrations |
-| Security | Only authorized users access data | All endpoints secured; role-based access control implemented |
+# 5. Summary of Changes / Decisions
+| Feature / Role | Feedback from Professor | Revision / Decision |
+|----------------|------------------------|-------------------|
+| User Workouts | Logging, progress, API integration | Added POST/GET API endpoints, API-powered dashboards |
+| Coach Role | Suggested coach feedback, assigned users | **Removed** — students track their own workouts and progress |
+| Payment / Subscription | Suggested optional monetization | **Removed** — system is fully free for students |
+| Admin | Manage users, roles, analytics, API integration | Implemented all via UI + API endpoints |
+| Security | Role-based access | All endpoints secured; users access only their data |
+| API & JSON | Suggested API support | Fully implemented for user & admin; coach removed |
 
 ---
 
 # 6. Notes
-- The system is now fully **API-enabled**, supporting both UI and future mobile/dashboard clients.
-- Coach and admin roles have standardized **JSON API responses**.
-- User, coach, and admin data is protected with **role-based authentication**.
-- All revisions are in line with **Professor Bon Sy’s recommendations**.
+- The system now focuses on **student self-tracking** and **fully free access**.  
+- **API and JSON endpoints** are implemented for future mobile/dashboard integration.  
+- All professor feedback on data access, analytics, and progress visualization has been addressed.  
+- Removal of coach/payment features was **intentional** to keep the project **feasible and functional** within the semester scope.
