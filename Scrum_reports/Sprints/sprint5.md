@@ -1,0 +1,2 @@
+Sprint 5 Goal:
+Re-enter the discovery phase and redefine the system around our three final actors — User, Admin, and System. This includes removing the Coach actor and all pricing/subscription features, rewriting stakeholder requirements, updating all use cases and diagrams, and realigning our requirements and architecture so that every function clearly maps to one or more of these three actors: User, Admin, and System.
