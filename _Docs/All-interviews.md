@@ -36,7 +36,7 @@ A: Yes, I would consider paying a small student-friendly fee for advanced analyt
 
 ---
 
-## ✅ Admin Interview – Questions & Answers
+## Admin Interview – Questions & Answers
 
 **Q1. What is your main responsibility as an admin?**  
 A: My main responsibility is managing users and maintaining system security.
@@ -67,3 +67,4 @@ A: Yes, to prevent misuse and offensive content.
 
 **Q10. What is the most important system goal for you?**  
 A: System stability, data security, and smooth performance.
+
