@@ -1,194 +1,111 @@
-# ✅ Professor Feedback — Updated Requirements & System Revisions
+# 📝 Professor Feedback & System Revisions
 **QFit Workout Tracker — API-Integrated Version**  
-This document consolidates all instructor feedback and provides a fully revised set of **Stakeholder Requirements**, **Functional Requirements**, **role updates**, and **interview insights**, rewritten for API-based system architecture.
+This document summarizes all feedback from the professor and how our team revised the system accordingly.
 
 ---
 
-# 1. User Interview Summary (Revised for API Integration)
+# 1. User Role
 
-The primary end user is a **Queens College student** seeking a simple, efficient way to track workouts, measure progress, and stay consistent.
+## 1.1 Feedback from Professor
+- Users should be able to log workouts, view history, track progress, and set goals.
+- API integration should allow future mobile clients to access user data.
+- Progress dashboards should reflect real-time performance metrics.
+- Security: Users must only access their own data.
 
-### Interview Insights
-- Works out **3–4 times/week**.
-- Needs an easy way to track:  
-  - exercise name  
-  - sets  
-  - reps  
-  - weight  
-  - notes  
-- Wants progress dashboards showing:  
-  - weekly volume  
-  - personal record (PR) progression  
-  - weight trends  
-- Wants helpful reminders when inactive for several days.
-- Prefers a clean, simple UI with optional deeper stats.
-- Will use the system daily if:  
-  - logging is fast  
-  - charts update instantly  
-- Wants the platform to work in the future with **mobile apps** or external tools → *requires API support*.
-
-### Identified User Needs
-- Quick workout logging.
-- Immediate progress visualization.
-- Goal-setting tools.
-- Reminders to stay consistent.
-- Ability to view coach feedback.
-- Access to progress data through **API endpoints** for future mobile or web apps.
+## 1.2 Our Revisions
+- Added **POST API endpoints** for logging workouts.
+- Added **GET API endpoints** for retrieving workout history and progress.
+- Progress charts now powered by **API data**, supporting volume, PR trends, and consistency.
+- Profile updates and password changes are accessible via **API + UI**.
+- Security updated: only authenticated users can access their own data.
 
 ---
 
-# 2. Stakeholder Requirements (Updated With API Integration)
+# 2. Coach Role
 
-## SR-1: User Stakeholder Requirements
+## 2.1 Feedback from Professor
+- Coaches should view assigned users and their workout history.
+- Coaches should submit feedback and see historical feedback.
+- API endpoints should support these actions for dashboard/mobile integration.
+- Use standardized JSON response format for consistency.
 
-### Updated User Requirements — SR1.x
-1. **SR1.1 – Log Workouts (UI + API)**  
-   Users shall log workouts via UI forms and through a `POST` API endpoint.
-
-2. **SR1.2 – View Workout History (UI + API)**  
-   Users shall view their workout history on the dashboard or retrieve it using a secure JSON API.
-
-3. **SR1.3 – View Progress & Trends (API-Powered)**  
-   Progress charts (volume, PR trends, consistency) shall be generated from API-driven data.
-
-4. **SR1.4 – Manage Account (UI + API)**  
-   Users shall update their profile/password via web UI or authenticated API endpoints.
-
-5. **SR1.5 – Receive Coach Feedback (UI + API)**  
-   Users shall view coach feedback on the dashboard or retrieve it via a JSON API endpoint.
-
-6. **SR1.6 – Secure Access to Personal Data (API Security)**  
-   Users shall only access their own data using authenticated API calls.
-
-### Changes from Previous Version
-- Full **API support** added to all user actions.  
-- Workout logging now includes a **POST API endpoint**.  
-- Workout history and feedback retrieval is **JSON-based**, not JSP-only.  
-- Progress dashboards updated to be **API-powered**, not static pages.  
-- Account management now supports API-based updates.  
-- Security updated for authenticated user-level access.
+## 2.2 Our Revisions
+- Coach login supports elevated privileges.
+- View assigned users via **UI + API**.
+- Retrieve workout history and progress trends via **API**.
+- Submit, update, and delete feedback through **UI + POST/PUT/DELETE API endpoints**.
+- All coach API responses use **standardized JSON format**.
 
 ---
 
-## SR-2: Coach Stakeholder Requirements (Updated)
+# 3. Admin Role
 
-### Updated Coach Requirements — SR2.x
-1. **SR2.1 – View User Workout History (API + UI)**  
-   Coaches shall view user workouts including sets, reps, weight, notes.
+## 3.1 Feedback from Professor
+- Admins should view all users, manage accounts (activate/deactivate), reset passwords, and manage roles.
+- Admin actions must support **API endpoints** for external apps or dashboards.
+- Admins should access system logs, metrics, and external integrations.
 
-2. **SR2.2 – Access Workout Data via API**  
-   Coaches shall retrieve user workout data through REST API endpoints.
-
-3. **SR2.3 – Analyze Progress via API**  
-   Coaches shall view progress trends using API-provided data structures.
-
-4. **SR2.4 – Submit Written Feedback (UI + API)**  
-   Feedback shall be submit-able via UI or API POST commands.
-
-5. **SR2.5 – View Feedback History (API + UI)**  
-   Feedback history shall be retrievable through GET API endpoints.
-
-6. **SR2.6 – Access Standardized Performance Metrics (API)**  
-   Coaches shall view consistency, volume progress, and PR estimates through API-formatted JSON.
-
-### What Changed?
-- Old version assumed everything was done on JSP pages.  
-- New version supports coach workflows **via API** (dashboard, mobile, integrations).  
-- All coach data (workouts, trends, feedback) now uses **standardized JSON responses**.
+## 3.2 Our Revisions
+- Admin login implemented with full privileges.
+- View all users and roles via **UI + GET API**.
+- Activate/deactivate accounts via **PUT/POST API**.
+- Password reset via **UI + API**.
+- Manage system roles via **API endpoint**.
+- Retrieve system-wide analytics through **Analytics API** (active users, workouts, coach feedback, etc.).
+- Access system logs via **secured API routes**.
+- Support external integrations with **API keys/tokens**.
 
 ---
 
-## SR-3: Admin Stakeholder Requirements (Updated)
+# 4. Functional Requirements (FR)
 
-### Updated Admin Requirements — SR3.x
-1. **SR3.1 – View All Users (UI + API)**  
-   Admins shall see all users and their statuses through UI + API.
+## 4.1 Feedback from Professor
+- All user, coach, and admin functionality must support **UI + API**.
+- Workouts, progress tracking, and feedback should be **API-powered**.
+- Data access must be secure and role-based.
 
-2. **SR3.2 – Activate/Deactivate Users (UI + API)**  
-   Uses secure PUT/POST API endpoints for status updates.
+## 4.2 Our Revisions
 
-3. **SR3.3 – Reset User Passwords (UI + API)**  
-   Password reset supported through UI and API commands.
+### User (FR-1)
+- Log workouts via UI + `POST /api/workouts`.
+- View workout history via UI + GET API.
+- View progress charts via API.
+- View coach feedback via UI + API.
+- Profile management via UI + API.
+- Secure access: users can only see their own data.
 
-4. **SR3.4 – Manage System Roles (UI + API)**  
-   Admins shall set user roles (User/Coach/Admin) via role management API endpoints.
+### Coach (FR-2)
+- Coach login with elevated privileges.
+- View assigned users (UI + API).
+- Retrieve workout history via JSON API.
+- Analyze progress trends via API.
+- Submit/update/delete feedback via UI + API.
+- Standardized JSON response for all coach endpoints.
 
-5. **SR3.5 – View System Metrics (Analytics API)**  
-   Admins shall retrieve usage analytics through JSON APIs:
-   - active users  
-   - workouts logged  
-   - weekly activity  
-   - coach feedback counts  
-
-6. **SR3.6 – Access System Logs (API-based)**  
-   Admins shall retrieve error/event logs through secure API routes.
-
-7. **SR3.7 – Manage External Integrations**  
-   Admins shall generate API keys/tokens for future integrations or mobile apps.
-
-### What Changed?
-- All admin capabilities now support **REST API endpoints**, not just UI screens.  
-- Logging, analytics, role management, and account control are now fully API-enabled.  
-- Admin functionality now aligns with real-world software engineering workflows.
-
----
-
-# 3. Functional Requirements (Updated for API Architecture)
-
-## FR-1: User Functional Requirements
-
-### Authentication & Account
-- **FR1.1** User registration  
-- **FR1.2** Validate inputs  
-- **FR1.3** Store credentials securely  
-- **FR1.4** Login  
-- **FR1.5** Validate credentials  
-- **FR1.6** Profile update via UI + API  
-
-### Workouts & Dashboard
-- **FR1.7** Log workouts via UI + `POST /api/workouts`  
-- **FR1.8** View workout history via UI + GET API  
-- **FR1.9** View API-powered analytics charts  
-- **FR1.10** View coach feedback via UI + API  
-- **FR1.11** Secure access to only their own data  
+### Admin (FR-3)
+- Admin login with full privileges.
+- View all users (UI + GET API).
+- Activate/deactivate accounts (UI + PUT API).
+- Reset passwords (UI + POST API).
+- Manage system roles (UI + API).
+- View system analytics via API.
+- Access system logs via API.
+- Support external integrations with API keys/tokens.
 
 ---
 
-## FR-2: Coach Functional Requirements
-
-### Authentication & User Access
-- **FR2.1** Coach login  
-- **FR2.2** View assigned users via UI + API  
-
-### Workout / Progress Access (API)
-- **FR2.3** Retrieve workouts via JSON API  
-- **FR2.4** View API-powered progress trends  
-
-### Feedback Management
-- **FR2.5** Submit feedback via UI + POST API  
-- **FR2.6** Update feedback  
-- **FR2.7** Delete feedback  
-- **FR2.8** Retrieve feedback history via UI + API  
-
-### API Structure
-- **FR2.9** All coach data shall follow standardized JSON formats  
+# 5. Summary of Changes
+| Role | Feedback | Revision |
+|------|---------|----------|
+| User | Needs API integration for logging, history, progress | Added POST/GET API endpoints, progress dashboards powered by API |
+| Coach | Feedback, history, progress via API | Added standardized JSON API endpoints for workouts and feedback |
+| Admin | All management tasks should support API | Admin endpoints for users, roles, passwords, logs, metrics, integrations |
+| Security | Only authorized users access data | All endpoints secured; role-based access control implemented |
 
 ---
 
-## FR-3: Admin Functional Requirements
-
-### Core Admin
-- **FR3.1** Admin login  
-
-### User Management
-- **FR3.2** View all users (UI + GET API)  
-- **FR3.3** Activate/deactivate accounts (UI + PUT API)  
-- **FR3.4** Reset password (UI + POST API)  
-- **FR3.5** Manage user roles (UI + API)  
-
-### System Management
-- **FR3.6** View analytics via API  
-- **FR3.7** Retrieve system logs through API  
-- **FR3.8** Manage API keys for integrations  
-
----
+# 6. Notes
+- The system is now fully **API-enabled**, supporting both UI and future mobile/dashboard clients.
+- Coach and admin roles have standardized **JSON API responses**.
+- User, coach, and admin data is protected with **role-based authentication**.
+- All revisions are in line with **Professor Bon Sy’s recommendations**.
