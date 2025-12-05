@@ -56,3 +56,5 @@ Q-Fit directly solves these student-specific pain points by providing a complete
 - No automated unit/integration tests (only manual QA by Ali)  
 - Dashboard load time can reach ~2.8 s on first visit (caching not implemented)  
 - No dark mode or advanced responsive tweaks for very small screens  
+
+
