@@ -4,6 +4,9 @@ I implemented the complete student registration workflow, including QC ID front 
 so the system runs smoothly without a database. The coach section was removed, and the separate register JSP was eliminated so that clicking “Create New Account” now directly opens the student registration page.
 All pages are fully connected through complete navigation, and the code structure is prepared for future MySQL and AWS integration.
 
+Here is my source code uploaded to Google Drive for teammates to access a clean version without issues from GitHub clutter: 
+https://drive.google.com/drive/folders/1pgq4aHSXrngSRz3tIeqAVrAoIh2RQf3w?usp=sharing
+
 
 And, I created the Use Case Diagram and the System Architecture Diagram, clearly documenting system functionality and 
 overall structure to support team development and presentation.
