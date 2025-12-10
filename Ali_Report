@@ -1,0 +1,15 @@
+I was assigned responsibility for the UI design and built the homepage, user/student registration form page, Admin Dashboard, Admin – User Management page, Admin – Pending Accounts page, and Admin – 
+All Accounts page using custom JSP, HTML, CSS, and Java Servlet code. 
+I implemented the complete student registration workflow, including QC ID front and back image uploads, and developed temporary backend logic using hard-coded functions 
+so the system runs smoothly without a database. The coach section was removed, and the separate register JSP was eliminated so that clicking “Create New Account” now directly opens the student registration page. 
+All pages are fully connected through complete navigation, and the code structure is prepared for future MySQL and AWS integration.
+
+
+
+And, I created the Use Case Diagram and the System Architecture Diagram, clearly documenting system functionality and 
+overall structure to support team development and presentation.
+
+
+As part of the requirement discovery process, short interviews were conducted with users 
+and administrators to understand system expectations and usability needs. 
+Their feedback helped define account management features and core workout tracking functionalities.
