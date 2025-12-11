@@ -11,6 +11,15 @@
 - **Thasneem** – Front-End Coordinator
   Assists with GitHub setup, researches interface and HTML structures, and supports MySQL schema design.
 
+  ## Scrum Team Roles & Development Branches
+
+| Member | Role & Focus | Branch Link |
+| :--- | :--- | :--- |
+| **Sonu** | Scrum Master & Backend Lead (Servlets, Logic, Documentation) | [feature/sonu-scrum-backend]([YOUR_REPO_BASE_URL]/tree/feature/sonu-scrum-backend) |
+| **Bryan** | Product Owner & Backend Integration (Servlets, Routing, AWS) | [feature/bryan-devops-aws]([YOUR_REPO_BASE_URL]/tree/feature/bryan-devops-aws) |
+| **Thasneem** | Front-End Coordinator & Schema/Issues (UI, Schema, Manuals) | [feature/thasneem-frontend-ui-ux]([https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/feature/thasneem-frontend-ui-ux) |
+| **Ali** | Front-End Developer, Tester & Architect (UI, Testing, Diagrams) | [feature/ali-frontend-arch]([YOUR_REPO_BASE_URL]/tree/feature/ali-frontend-arch) |
+
 ---
 
 ## Sprint 1 – Discovery Phase
@@ -128,3 +137,4 @@ Updated architecture and sequence diagrams (v2).
 | Sprint 4 | 11/23-11/30| Implementation | In progress |
 | Sprint 5 | 11/29-12/5 | Back to Discovery | In progress |
 ---
+
