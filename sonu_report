@@ -1,1 +1,20 @@
+## Sonu's Branch Workflow (Week 1–7)
+
+main
+│
+├── feature/sonu/setup-repo                 (Week 1)
+│
+├── feature/sonu/stakeholder-req            (Week 2)
+│
+├── feature/sonu/sprint-docs                (Week 3)
+│
+├── feature/sonu/eclipse-tomcat-setup       (Week 4)
+│
+├── feature/sonu/rewrite-discovery          (Week 5)
+│
+├── feature/sonu/traceability-update        (Week 6)
+│
+└── feature/sonu/final-docs                 (Week 7)
+     │
+     └── Merged → main
 
