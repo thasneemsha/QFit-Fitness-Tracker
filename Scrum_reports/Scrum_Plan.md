@@ -2,10 +2,10 @@
 
 ## Scrum Team Roles
 
-- **Sonu** feature/sonu-scrum-backend – Scrum Master & Backend Lead (Servlets, Logic, Documentation)
-- **Bryan** feature/bryan-devops-aws – Product Owner & Backend Integration (Servlets, Routing, AWS)
-- **Thasneem** feature/thasneem-frontend-ui-ux – Front-End Coordinator & Schema/Issues (UI, Schema, Manuals)
-- **Ali** feature/ali-frontend-arch – Front-End Developer, Tester & Architect (UI, Testing, Diagrams)
+- **Sonu** – Scrum Master & Backend Lead (Servlets, Logic, Documentation)
+- **Bryan** – Product Owner & Backend Integration (Servlets, Routing, AWS)
+- **Thasneem** – Front-End Coordinator & Schema/Issues (UI, Schema, Manuals)
+- **Ali** – Front-End Developer, Tester & Architect (UI, Testing, Diagrams)
 
 
 ---
