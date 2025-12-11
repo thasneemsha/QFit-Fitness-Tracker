@@ -2,11 +2,12 @@
 
 ## Scrum Team Roles
 
-- **Sonu**`feature/sonu-scrum-backend`– Scrum Master & Backend Lead (Servlets, Logic, Documentation)
-- **Bryan**`feature/bryan-devops-aws` – Product Owner & Backend Integration (Servlets, Routing, AWS)
-- **Thasneem** `feature/thasneem-frontend-ui-ux` – Front-End Coordinator & Schema/Issues (UI, Schema, Manuals)
-- **Ali**`feature/ali-frontend-arch` – Front-End Developer, Tester & Architect (UI, Testing, Diagrams)
-
+| Member | Role & Focus | Branch Link |
+| :--- | :--- | :--- |
+| **Sonu** | Scrum Master & Backend Lead (Servlets, Logic, Documentation) | [feature/sonu-scrum-backend](https://github.com/thasneemsha/QFit-Fitness-Tracker/tree/feature/sonu-scrum-backend) |
+| **Bryan** | Product Owner & Backend Integration (Servlets, Routing, AWS) | [feature/bryan-devops-aws](https://github.com/thasneemsha/QFit-Fitness-Tracker/tree/feature/bryan-devops-aws) |
+| **Thasneem** | Front-End Coordinator & Schema/Issues (UI, Schema, Manuals) | [feature/thasneem-frontend-ui-ux](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/feature/thasneem-frontend-ui-ux) |
+| **Ali** | Front-End Developer, Tester & Architect (UI, Testing, Diagrams) | [feature/ali-frontend-arch](https://github.com/thasneemsha/QFit-Fitness-Tracker/tree/feature/ali-frontend-arch) |
 
 ---
 
