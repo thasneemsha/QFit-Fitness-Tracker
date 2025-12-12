@@ -1,32 +1,128 @@
-| Sprint 1 Burn-Down Chart – Ali (Person A)            |                |            |                       |        |
-| ---------------------------------------------------- | -------------- | ---------- | --------------------- | ------ |
-| Due: End of Sprint 1                                 |                |            |                       |        |
-| Total Tasks: 2                                       |                |            |                       |        |
-|                                                      |                |            |                       |        |
-| Burn-Down Data                                       |                |            |                       |        |
-| Day                                                  | Date           | Work Hours | Ideal Remaining       | Actual |
-| Day 1                                                | Week 1 – Day 1 | 3PM–7PM    | 8                     | 8      |
-| Day 2                                                | Week 1 – Day 2 | 4PM–8PM    | 4                     | 2      |
-| Day 3                                                | Week 1 – Day 3 | 6PM–8PM    | 0                     | 0      |
-|                                                      |                |            |                       |        |
-| Person A Tasks:                                      |                |            | Task Completion Date: |        |
-| Build homepage (JSP/HTML/CSS) – Person A             |                |            | Week 1                |        |
-| Build user/student registration form page – Person A |                |            | Week 1                |        |
+Sprint 1 Burn-Down Chart – Ali (Person A)
+Due: End of Sprint 1
+Total Tasks: 2
+
+Burn-Down Data
+
+| Day   | Date           | Work Hours | Ideal Remaining | Actual |
+| ----- | -------------- | ---------- | --------------- | ------ |
+| Day 1 | Week 1 – Day 1 | 3PM–7PM    | 8               | 8      |
+| Day 2 | Week 1 – Day 2 | 4PM–8PM    | 4               | 2      |
+| Day 3 | Week 1 – Day 3 | 6PM–8PM    | 0               | 0      |
+
+Person A Tasks
+1.Build homepage (JSP/HTML/CSS)
+2.Build user/student registration form page
+
+
+Sprint 2 Burn-Down Chart – Ali (Person A)
+Due: End of Sprint 2
+Total Tasks: 3
+
+Burn-Down Data
+| Day   | Date           | Work Hours | Ideal Remaining | Actual |
+| ----- | -------------- | ---------- | --------------- | ------ |
+| Day 1 | Week 2 – Day 1 | 3PM–8PM    | 10              | 9      |
+| Day 2 | Week 2 – Day 2 | 6PM–9PM    | 6               | 3      |
+| Day 3 | Week 2 – Day 3 | 5PM–7PM    | 0               | 0      |
+
+Person A Tasks
+1.Implement student registration workflow
+2.QC ID front/back image upload
+3.Temporary backend logic using hard-coded functions
+
+
+Sprint 3 Burn-Down Chart – Ali (Person A)
+Due: End of Sprint 3
+Total Tasks: 2
+
+Burn-Down Data
+| Day   | Date           | Work Hours | Ideal Remaining | Actual |
+| ----- | -------------- | ---------- | --------------- | ------ |
+| Day 1 | Week 3 – Day 1 | 4PM–7PM    | 6               | 5      |
+| Day 2 | Week 3 – Day 2 | 6PM–8PM    | 3               | 1      |
+| Day 3 | Week 3 – Day 3 | 5PM–6:30PM | 0               | 0      |
+Person A Tasks
+
+1.Connect all pages with complete navigation
+2.Conduct interviews with users and adminSprint 4 Burn-Down Chart – Ali (Person A)
+
+Due: End of Sprint 4
+Total Tasks: 1
+
+Burn-Down Data| Day   | Date           | Work Hours | Ideal Remaining | Actual |
+| ----- | -------------- | ---------- | --------------- | ------ |
+| Day 1 | Week 4 – Day 1 | 4PM–6:30PM | 4               | 0      |
+Person A Tasks
+
+1.Upload clean source code to Google Drive for team access
+2.Verify project runs correctly for teammates using the shared code
+3.Ensure navigation and UI consistency before handoff
+
+Sprint 5 Burn-Down Chart – Ali (Person A)
+Due: End of Sprint 5
+Total Tasks: 2
+Burn-Down Data
+| Day   | Date           | Work Hours | Ideal Remaining | Actual |
+| ----- | -------------- | ---------- | --------------- | ------ |
+| Day 1 | Week 5 – Day 1 | 3PM–6PM    | 6               | 3      |
+| Day 2 | Week 5 – Day 2 | 6PM–7:30PM | 0               | 0      |
+
+Person A Tasks
+1.Create Use Case Diagram
+2.Create System Architecture Diagram
+3.Source Code (Google Drive):
+4.https://drive.google.com/drive/folders/1pgq4aHSXrngSRz3tIeqAVrAoIh2RQf3w?usp=sharing
+
+Sprint 6 Burn-Down Chart – Ali (Person A)
+Due: End of Sprint 6
+Total Tasks: 2
+Burn-Down Data
+
+| Day   | Date           | Work Hours | Ideal Remaining | Actual |
+| ----- | -------------- | ---------- | --------------- | ------ |
+| Day 1 | Week 6 – Day 1 | 4PM–6PM    | 4               | 3      |
+| Day 2 | Week 6 – Day 2 | 6PM–8PM    | 2               | 0      |
+
+Person A Tasks
+1.Collaborated with team to review updated requirements and UI changes
+2.Reviewed and verified removal of Coach section across the system
+3.Confirmed removal of register.jsp for Admin registration and validated updated admin flow
+
+Sprint 7 Burn-Down Chart – Ali (Person A)
+Due: End of Sprint 7
+Total Tasks: 1
+Burn-Down Data
+| Day   | Date   | Work Hours | Ideal Remaining | Actual |
+| ----- | ------ | ---------- | --------------- | ------ |
+| Day 1 | Week 7 | 5PM–6:30PM | 2               | 0      |
+
+Person A Tasks
+
+1.Took live UI screenshots based on Thasneema’s updated User and Admin dashboard code and uploaded them to GitHub
 
 
 
-| Sprint 2 Burn-Down Chart – Ali (Person A)                     |                |            |                       |        |
-| ------------------------------------------------------------- | -------------- | ---------- | --------------------- | ------ |
-| Due: End of Sprint 2                                          |                |            |                       |        |
-| Total Tasks: 3                                                |                |            |                       |        |
-|                                                               |                |            |                       |        |
-| Burn-Down Data                                                |                |            |                       |        |
-| Day                                                           | Date           | Work Hours | Ideal Remaining       | Actual |
-| Day 1                                                         | Week 2 – Day 1 | 3PM–8PM    | 10                    | 9      |
-| Day 2                                                         | Week 2 – Day 2 | 6PM–9PM    | 6                     | 3      |
-| Day 3                                                         | Week 2 – Day 3 | 5PM–7PM    | 0                     | 0      |
-|                                                               |                |            |                       |        |
-| Person A Tasks:                                               |                |            | Task Completion Date: |        |
-| Implement student registration workflow – Person A            |                |            | Week 2                |        |
-| QC ID front/back image upload – Person A                      |                |            | Week 2                |        |
-| Temporary backend logic using hard-coded functions – Person A |                |            | Week 2                |        |
+
+Contribution Summary – Ali (Person A)
+
+I was assigned responsibility for the UI design and built the homepage, user/student registration form page, Admin Dashboard, Admin 
+– User Management page, Admin – Pending Accounts page, and Admin – All Accounts page using custom JSP, HTML, CSS, and Java Servlet code. 
+I implemented the complete student registration workflow, including QC ID front and back image uploads, and
+developed temporary backend logic using hard-coded functions so the system runs smoothly without a database. 
+The Coach section was removed, and the separate register JSP was eliminated so that clicking “Create New Account” now directly opens the student registration page. 
+All pages are fully connected through complete navigation.
+
+Source Code (Google Drive):
+https://drive.google.com/drive/folders/1pgq4aHSXrngSRz3tIeqAVrAoIh2RQf3w?usp=sharing
+
+I also created the Use Case Diagram and the System Architecture Diagram, clearly documenting system functionality
+and overall structure to support team development and presentation.
+
+As part of the requirement discovery process, short interviews were conducted with users and administrators to understand system expectations 
+and usability needs. Their feedback helped define account management features and core workout tracking functionalities.
+
+Took live UI screenshots based on Thasneema’s updated User and Admin dashboard code and uploaded them to GitHub.
+
+
+
