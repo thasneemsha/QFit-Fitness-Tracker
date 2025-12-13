@@ -1,0 +1,33 @@
+@startuml
+title SEQ-01 - Log Workout (UC-01B / FR-2)
+
+actor User
+boundary "Web Browser (UI)" as UI
+control "WorkoutController\n(Servlet/JSP)" as Controller
+control "WorkoutService" as Service
+entity "WorkoutDAO" as DAO
+database "MySQL Database" as DB
+
+User -> UI : Enter workout details\n(exercise, sets, reps, weight,\nduration, optional notes)
+User -> UI : Click "Save Workout"
+
+UI -> Controller : POST /workouts/create\n(workout form data)
+
+Controller -> Service : validateWorkout(data)
+
+alt Invalid input (missing/invalid fields)
+  Service --> Controller : validationErrors
+  Controller --> UI : Show validation errors
+  UI --> User : Display error messages
+else Valid input
+  Service -> Service : addTimestamp()
+  Service -> DAO : saveWorkout(workout)
+  DAO -> DB : INSERT workout entry\n+ timestamp + userId
+  DB --> DAO : insert success (workoutId)
+  DAO --> Service : workoutId
+  Service --> Controller : success(workoutId)
+  Controller --> UI : Redirect to Workout History\n/ confirmation message
+  UI --> User : Workout saved confirmation\nand updated history
+end
+
+@enduml
