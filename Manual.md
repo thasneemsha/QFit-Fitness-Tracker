@@ -151,7 +151,7 @@
   </details
   
 * <details> <summary>8. Support & Contact </summary>
-<br>
+  <br>
 
   ***Contact Info***
   >If you require assistance with QFit, please contact the development team:
