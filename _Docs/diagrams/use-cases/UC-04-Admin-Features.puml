@@ -1,0 +1,25 @@
+@startuml
+title QFit - Use Case (Admin Features)
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Admin" as Admin
+
+rectangle "QFit Universal Workout Tracker" {
+  (View User Profiles) as UC_ViewProfiles
+  (Activate/Deactivate User Account) as UC_ToggleAccount
+  (Reset User Password) as UC_ResetPassword
+  (Manage System Roles) as UC_ManageRoles
+}
+
+Admin --> UC_ViewProfiles
+Admin --> UC_ToggleAccount
+Admin --> UC_ResetPassword
+Admin --> UC_ManageRoles
+
+note right of UC_ViewProfiles
+  Precondition:
+  Admin is authenticated (logged in)
+end note
+
+@enduml
