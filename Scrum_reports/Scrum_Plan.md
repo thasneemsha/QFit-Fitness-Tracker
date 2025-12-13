@@ -8,9 +8,9 @@
 | **Bryan** | Product Owner & Backend Integration (Servlets, Routing, AWS) | [feature/bryan-devops-aws](https://github.com/thasneemsha/QFit-Fitness-Tracker/tree/feature/bryan-devops-aws) |
 | **Thasneem** | Front-End Coordinator & Schema/Issues (UI, Schema, Manuals) | [feature/thasneem-frontend-ui-ux](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/feature/thasneem-frontend-ui-ux) |
 | **Ali** | Front-End Developer, Tester & Architect (UI, Testing, Diagrams) | [feature/ali-frontend-arch](https://github.com/thasneemsha/QFit-Fitness-Tracker/tree/feature/ali-frontend-arch) |
+</br>
 
 ---
-
 ## 📅 Sprint 1 – Discovery Phase
 **Duration:** Week 1 (11/2/25 – 11/8/25)
 **Goal:** Understand the problem domain, define key system actors, and gather initial requirements.
@@ -21,6 +21,7 @@
 | **Bryan** - Product Owner | Identified system actors and drafted initial stakeholder interview questions. | `[Pending]` |
 | **Thasneem** - Front-End Coordinator | *Joined 11/11/25 (Post-Sprint)* | `[Pending]` |
 | **Ali** - Front-End Developer | *Not Yet Active* | `[Pending]` |
+<br>
 
 ---
 
@@ -34,6 +35,7 @@
 | **Bryan** - Product Owner | Clarified and reorganized functional requirements; revised system description. | `[Pending]` |
 | **Thasneem** - Front-End Coordinator | *Initial team onboarding.* (started personal Interviews) | `[Pending]` |
 | **Ali** - Front-End Developer | *Not Yet Active* | `[Pending]` |
+<br>
 
 ---
 
@@ -47,6 +49,7 @@
 | **Bryan** - Product Owner | Completed stakeholder interviews, updated requirements, finished Traceability Matrix, prepared AWS infrastructure. | `[Pending]` |
 | **Thasneem** - Front-End/Schema | Created GitHub repository; researched web UI structure; began designing database schemas (initial conceptual phase only). | `[Pending]` |
 | **Ali** - Front-End Developer | Researched front-end testing frameworks (initial preparation). | `[Pending]` |
+<br>
 
 ---
 
@@ -60,6 +63,7 @@
 | **Bryan** - Backend Integration | Set up Tomcat deployment pipeline; implemented core CSS framework and styling (for integration layer). | `[Pending]` |
 | **Thasneem** - Front-End/Schema | Developed **`userDashboard.jsp`** and the base structure for **`profile.jsp`**. | `[Pending]` |
 | **Ali** - Front-End Developer | Developed **`index.jsp` (Login Page)**,**`register.jsp`**, and the **`adminDashboard.jsp`**. | `[Pending]` |
+<br>
 
 ---
 
@@ -73,6 +77,7 @@
 | **Bryan** - Product Owner/Integration | Updated functional requirements and revised interview questions. | `[Pending]` |
 | **Thasneem** - Front-End/Schema | Established the foundational GitHub repository structure and project management framework. (GitHub Setup, Issues, Kanban/Sprints,...) | `[Pending]` |
 | **Ali** - Front-End Developer/Tester | Updated architecture and sequence diagrams (v2) to align with the new system flows. | `[Pending]` |
+<br>
 
 ---
 
@@ -86,6 +91,7 @@
 | **Bryan** - Backend Integration | Connected JSP forms to servlet endpoints (routing). Debugged servlet routing (POST/GET fixes). Began testing servlet responses. | `[Pending]` |
 | **Thasneem** - Front-End/Schema | Developed **`workoutHistory.jsp`**, **`viewSession.jsp`**,**`error.jsp`**, **`logWorkout.jsp`**, **`editPlan.jsp`**, and **`planDetails.jsp`** pages. | `[Pending]` |
 | **Ali** - Front-End Developer/Tester | Updated architecture diagram. Refined and exported sequence diagrams, Use-case diagram, Ui-screenshots | `[Pending]` |
+<br>
 
 ---
 
@@ -99,3 +105,4 @@
 | **Bryan** - Backend Integration | Completed front-end integration with all servlets. Fixed UI/servlet mismatches. Conducted **final UI walkthrough for demo flow** (rehearsal). | `[Pending]` |
 | **Thasneem** - Front-End/Schema | Finalized schema for mySql. Wrote the **User/Admin manuals**. Managed the final GitHub Issues close-out. | `[Pending]` |
 | **Ali** - Front-End Developer/Tester | Produced the **final architecture diagram** and all final sequence diagrams. Performed final integration testing. | `[Pending]` |
+<br>
