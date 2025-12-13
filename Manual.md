@@ -37,7 +37,8 @@
 
 
 * <details> <summary> 4. Getting Started </summary>
-
+  <br>
+    
   ***4.1 Account Creation & Login***
 
   | Step | Page/Path | Action | Expected Result |
@@ -63,7 +64,8 @@
   * **Active Plan List:** Your current routines, ready to be viewed or logged.
   * **Progress Charts:** Visual data showing long-term strength and endurance gains.
   * **Workout Calendar:** Marks the days you completed a session. **You can also click the '+' sign on any date to quickly create a new workout plan.**
-
+  <br>
+  
   ***4.4 API Integration (Google Fit & Apple Health)***
 
    >QFit supports synchronization with major health platforms, allowing you to incorporate external data (like steps or calories) into your tracking.
@@ -79,35 +81,34 @@
 
 
 * <details> <summary> 5. Core Features (User) </summary>
-
+  <br>
+    
   ***5.1 Feature A: Creating a Custom Plan***
 
   >You can define any exercise name you want (e.g., "Yoga Flow," "Bench Press," "My Special Cardio").
 
   ### **How-to: Creating a New Plan**
-  1.  **Initiate:** On the Dashboard, click the "Create New Plan" button.
-  2.  **Define Core:** Enter a unique **Plan Name**.
-  3.  **Add Exercise:** Click the "Add Exercise" button.
-      * **CRITICAL INPUT:** In the **Exercise Name** field, **type your custom name**.
-      * Set **Target Sets**, **Reps**, and **Target Weight** (optional).
-  4.  **Save:** Submit the form. The system saves the Plan and its custom components.
-
-
-
+    1.  **Initiate:** On the Dashboard, click the "Create New Plan" button.
+    2.  **Define Core:** Enter a unique **Plan Name**.
+    3.  **Add Exercise:** Click the "Add Exercise" button.
+        * **CRITICAL INPUT:** In the **Exercise Name** field, **type your custom name**.
+        * Set **Target Sets**, **Reps**, and **Target Weight** (optional).
+    4.  **Save:** Submit the form. The system saves the Plan and its custom components.
+   <br>
+   
   ***5.2 Feature B: Logging a Workout Session***
   >This is where you record the actual weight and reps achieved.
 
   #### **How-to: Logging a Session**
-  1.  **Start:** Navigate to the plan and click **"Log this Workout Today."**
-  2.  **Session Record:** The system automatically creates a date/time record of your session.
-  3.  **Data Entry:** For **EACH SET** of **EACH EXERCISE**, enter:
-      * Actual Reps
-      * Actual Weight (or Time)
-      * RPE (Rate of Perceived Exertion, optional)
-  4.  **Finalize:** Click "Submit Log." The detailed performance data is saved as a permanent record.
-
-
-
+    1.  **Start:** Navigate to the plan and click **"Log this Workout Today."**
+    2.  **Session Record:** The system automatically creates a date/time record of your session.
+    3.  **Data Entry:** For **EACH SET** of **EACH EXERCISE**, enter:
+        * Actual Reps
+        * Actual Weight (or Time)
+        * Color selection for easy navigation
+    4.  **Finalize:** Click "Submit Log." The detailed performance data is saved as a permanent record.
+  <br>
+  
   ***5.3 Feature C: Progress Tracking***
   >Data is pulled dynamically for your Dashboard charts and history views.
 
@@ -120,19 +121,21 @@
   </details>
   
 * <details> <summary>6. Core Features (Admin) </summary>
-
+  <br>
+    
   ***6.1 Admin Duty: User Verification***
   >This is the Administrator's primary responsibility for site security.
 
   #### **How-to: Verifying a User**
-  1.  **Access Queue:** Log in and navigate to the **Pending Approval Queue**.
-  2.  **Review User:** Select a user to view the **Verification Review Page**.
-  3.  **Inspect Evidence:** The page displays the uploaded ID images.
-  4.  **Execute Decision:** Use the controls to finalize the user's status:
-      * **Approve:** Sets user status to **Approved**.
-      * **Reject:** Sets user status to **Rejected**.
+    1.  **Access Queue:** Log in and navigate to the **Pending Approval Queue**.
+    2.  **Review User:** Select a user to view the **Verification Review Page**.
+    3.  **Inspect Evidence:** The page displays the uploaded ID images.
+    4.  **Execute Decision:** Use the controls to finalize the user's status:
+        * **Approve:** Sets user status to **Approved**.
+        * **Reject:** Sets user status to **Rejected**.
 
-  > ⚠️ **PRIVACY NOTE:** The Administrator is responsible for ensuring the secure handling of ID images and must never store or share them outside the official verification module.
+    > ⚠️ **PRIVACY NOTE:** The Administrator is responsible for ensuring the secure handling of ID images and must never store or share them outside the official
+    verification module.
 
   ---
   </details>
@@ -148,6 +151,7 @@
   </details
   
 * <details> <summary>8. Support & Contact </summary>
+<br>
 
   ***Contact Info***
   >If you require assistance with QFit, please contact the development team:
@@ -157,7 +161,9 @@
     * njn
     * ThasneemMohamed29@qc.cuny.edu
     * kjkj
-
+  
+  <br>
+   
    ***Glossary***
   | Term | Definition |
   | :--- | :--- |
