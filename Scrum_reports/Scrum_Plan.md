@@ -31,8 +31,8 @@
 | Name & Role | Contribution Focus | Burndown Chart URL |
 | :--- | :--- | :--- |
 | **Sonu** - Scrum Master | Updated use case diagrams; adjusted scope (removed location modules). | `[Pending]` |
-| **Bryan** - Product Owner| Clarified and reorganized functional requirements; revised system description. | `[Pending]` |
-| **Thasneem** - Front-End Coordinator | *Joined 11/11/25 - Initial team onboarding.* | `[Pending]` |
+| **Bryan** - Product Owner | Clarified and reorganized functional requirements; revised system description. | `[Pending]` |
+| **Thasneem** - Front-End Coordinator | *Initial team onboarding.* (started personal Interviews) | `[Pending]` |
 | **Ali** - Front-End Developer | *Not Yet Active* | `[Pending]` |
 
 ---
@@ -43,9 +43,9 @@
 
 | Name & Role | Contribution Focus | Burndown Chart URL |
 | :--- | :--- | :--- |
-| **Sonu** - Scrum_Backend | Managed sprint progression; prepared team role split for development tasks. | `[Pending]` |
+| **Sonu** - Scrum Master/Backend | Managed sprint progression; prepared team role split for development tasks. | `[Pending]` |
 | **Bryan** - Product Owner | Completed stakeholder interviews, updated requirements, finished Traceability Matrix, prepared AWS infrastructure. | `[Pending]` |
-| **Thasneem** - Front-End/Schema | Created GitHub repository; researched web UI structure; began designing database schemas. | `[Pending]` |
+| **Thasneem** - Front-End/Schema | Created GitHub repository; researched web UI structure; began designing database schemas (initial conceptual phase only). | `[Pending]` |
 | **Ali** - Front-End Developer | Researched front-end testing frameworks (initial preparation). | `[Pending]` |
 
 ---
@@ -58,21 +58,21 @@
 | :--- | :--- | :--- |
 | **Sonu** - Backend Lead | Created Eclipse project structure; configured Servlets environment; Implemented initial User Data Access Objects (DAOs). | `[Pending]` |
 | **Bryan** - Backend Integration | Set up Tomcat deployment pipeline; implemented core CSS framework and styling (for integration layer). | `[Pending]` |
-| **Thasneem** - Front-End/Schema | Developed **`userDashboard.jsp`** and the base structure for **`profile.jsp`**. Implemented initial MySQL schema. | `[Pending]` |
-| **Ali** - Front-End Developer | Developed **`index.jsp` (Login Page)** and **`register.jsp`** (assumed); drafted initial architecture diagram. | `[Pending]` |
+| **Thasneem** - Front-End/Schema | Developed **`userDashboard.jsp`** and the base structure for **`profile.jsp`**. | `[Pending]` |
+| **Ali** - Front-End Developer | Developed **`index.jsp` (Login Page)**,**`register.jsp`**, and the **`adminDashboard.jsp`**. | `[Pending]` |
 
 ---
 
-## 📅 Sprint 5 – Frontend UI Development (Phase 2)
+## 📅 Sprint 5 – Discovery Reset & System Realignment
 **Duration:** Week 5 (11/30/25 – 12/6/25)
-**Goal:** Complete complex logging/history views and the Admin interface template.
+**Goal:** Realign project scope with professor feedback; rewrite requirements, diagrams, and system flows based on the updated 3-actor model.
 
 | Name & Role | Contribution Focus | Burndown Chart URL |
 | :--- | :--- | :--- |
-| **Sonu** - Backend Lead | Implemented Plan Data Access Objects (DAOs); defined core Servlet structure (non-coding). | `[Pending]` |
-| **Bryan** - Backend Integration | Prepared front-end integration templates (empty servlets) for data passing research. | `[Pending]` |
-| **Thasneem** - Front-End/Schema | Developed **`workoutHistory.jsp`**, **`viewSession.jsp`**, and the base **`error.jsp`** page. | `[Pending]` |
-| **Ali** - Front-End Developer | Developed the comprehensive **`adminDashboard.jsp`** with the verification modal; drafted initial sequence diagrams (Login/Register). | `[Pending]` |
+| **Sonu** - Scrum Master/Backend | Updated stakeholder requirements and documentation. Wrote Sprint/Scrum reports, README, and GitHub introduction. | `[Pending]` |
+| **Bryan** - Product Owner/Integration | Updated functional requirements and revised interview questions. | `[Pending]` |
+| **Thasneem** - Front-End/Schema | Established the foundational GitHub repository structure and project management framework. (GitHub Setup, Issues, Kanban/Sprints,...) | `[Pending]` |
+| **Ali** - Front-End Developer/Tester | Updated architecture and sequence diagrams (v2) to align with the new system flows. | `[Pending]` |
 
 ---
 
@@ -84,8 +84,8 @@
 | :--- | :--- | :--- |
 | **Sonu** - Scrum Master/Backend | Implemented **`LoginServlet`** and **`RegisterServlet`** logic. Tested JDBC connection and servlet routing. | `[Pending]` |
 | **Bryan** - Backend Integration | Connected JSP forms to servlet endpoints (routing). Debugged servlet routing (POST/GET fixes). Began testing servlet responses. | `[Pending]` |
-| **Thasneem** - Front-End/Schema | Completed final JSPs: **`logWorkout.jsp`**, **`editPlan.jsp`**, and **`planDetails.jsp`**. Finalized schema draft and reviewed it with Sonu. | `[Pending]` |
-| **Ali** - Front-End Developer/Tester | Created **detailed GitHub Issues** for all tasks. Updated architecture diagram (v2) and sequence diagrams (Workout Logging). | `[Pending]` |
+| **Thasneem** - Front-End/Schema | Developed **`workoutHistory.jsp`**, **`viewSession.jsp`**,**`error.jsp`**, **`logWorkout.jsp`**, **`editPlan.jsp`**, and **`planDetails.jsp`** pages. | `[Pending]` |
+| **Ali** - Front-End Developer/Tester | Updated architecture diagram. Refined and exported sequence diagrams, Use-case diagram, Ui-screenshots | `[Pending]` |
 
 ---
 
@@ -95,7 +95,7 @@
 
 | Name & Role | Contribution Focus | Burndown Chart URL |
 | :--- | :--- | :--- |
-| **Sonu** - Scrum Master/Backend | Completed remaining servlet logic. Finalized Sprint reports and final workout-flow. | `[Pending]` |
+| **Sonu** - Scrum Master/Backend | Completed remaining servlet logic and testing. Finalized Sprint reports and final workout-flow. Cleaned and organized the final GitHub repository. | `[Pending]` |
 | **Bryan** - Backend Integration | Completed front-end integration with all servlets. Fixed UI/servlet mismatches. Conducted **final UI walkthrough for demo flow** (rehearsal). | `[Pending]` |
-| **Thasneem** - Front-End/Schema | Finalized schema documentation. Completed **Test Plan** and wrote the **User/Admin manuals**. Managed GitHub Issues for final close-out. | `[Pending]` |
-| **Ali** - Front-End Developer/Tester | Produced final architecture diagram and all sequence diagrams. Performed final integration testing and provided diagram visuals for demo slides. | `[Pending]` |
+| **Thasneem** - Front-End/Schema | Finalized schema for mySql. Wrote the **User/Admin manuals**. Managed the final GitHub Issues close-out. | `[Pending]` |
+| **Ali** - Front-End Developer/Tester | Produced the **final architecture diagram** and all final sequence diagrams. Performed final integration testing. | `[Pending]` |
