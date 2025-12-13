@@ -1,0 +1,33 @@
+@startuml
+title QFit - Use Case (Workout Logging & Viewing)
+left to right direction
+skinparam packageStyle rectangle
+
+actor "User" as User
+
+rectangle "QFit Universal Workout Tracker" {
+
+  (Log Workout)
+  (Edit Workout Entry)
+  (Delete Workout Entry)
+
+  (View Workout History)
+  (View Charts / Progress)
+  (Apply Filters)
+}
+
+User --> (Log Workout)
+User --> (Edit Workout Entry)
+User --> (Delete Workout Entry)
+User --> (View Workout History)
+User --> (View Charts / Progress)
+
+(View Workout History) .> (Apply Filters) : <<include>>
+(View Charts / Progress) .> (Apply Filters) : <<include>>
+
+note right of (Log Workout)
+  Precondition:
+  User is authenticated (logged in)
+end note
+
+@enduml
