@@ -67,7 +67,7 @@ CREATE TABLE WorkoutPlan (
     FOREIGN KEY (user_id) REFERENCES User(user_id)
 );
 
--- *** 3. STATIC_EXERCISES Table (Standardized Lookup) ***
+-- *** 3. STATIC_EXERCISES Table ((OPTIONAL Suggestions/Lookups ONLY)) ***
 CREATE TABLE StaticExercises (
     static_exercise_id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100) UNIQUE NOT NULL,
@@ -75,17 +75,16 @@ CREATE TABLE StaticExercises (
     default_reps VARCHAR(50) NULL
 );
 
--- *** 4. EXERCISE Table (Plan Components - Links to StaticExercises) ***
+-- *** 4. EXERCISE Table (CRITICAL: Stores User's Custom Exercise Name) ***
 CREATE TABLE Exercise (
     exercise_id INT PRIMARY KEY AUTO_INCREMENT,
     plan_id INT NOT NULL,
-    static_exercise_id INT NOT NULL, 
+    exercise_name VARCHAR(100) NOT NULL, -- STORES THE CUSTOM NAME (e.g., 'Yoga Flow', 'Thasneem's Deadlift')
     target_sets INT NOT NULL,
-    target_reps VARCHAR(50) NOT NULL,
+    target_reps VARCHAR(50) NULL,
     target_weight FLOAT NULL,
     notes VARCHAR(255) NULL,
-    FOREIGN KEY (plan_id) REFERENCES WorkoutPlan(plan_id),
-    FOREIGN KEY (static_exercise_id) REFERENCES StaticExercises(static_exercise_id)
+    FOREIGN KEY (plan_id) REFERENCES WorkoutPlan(plan_id)
 );
 
 -- *** 5. LOGGED_SESSION Table (Workout History & Calendar Data Source) ***
@@ -122,4 +121,23 @@ SHOW TABLES;
 ```sql
 -- to see what's inside the table use (User here is the table name)
 DESCRIBE User;
+```
+
+```sql
+-- *** DATA INSERTION FOR STATICEXERCISES TABLE (we might not need this as we are allowing full customization) ***
+
+INSERT INTO StaticExercises (name, category, default_reps) VALUES
+('Barbell Bench Press', 'Chest', '8-12'),
+('Incline Dumbbell Press', 'Chest', '10-15'),
+('Barbell Squat', 'Legs', '5x5'),
+('Leg Press', 'Legs', '10-15'),
+('Deadlift', 'Back/Legs', '3-5'),
+('Barbell Row', 'Back', '8-12'),
+('Pull Up', 'Back', 'Failure'),
+('Overhead Press (Barbell)', 'Shoulders', '8-10'),
+('Lateral Raise (Dumbbell)', 'Shoulders', '12-15'),
+('Bicep Curl (Dumbbell)', 'Arms', '10-12'),
+('Triceps Pushdown', 'Arms', '10-15'),
+('Plank', 'Core', 'Time-Based'),
+('Treadmill Run', 'Cardio', 'Time-Based');
 ```
