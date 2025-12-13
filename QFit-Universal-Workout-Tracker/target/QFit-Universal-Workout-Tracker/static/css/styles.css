@@ -1,0 +1,1059 @@
+/* ========== Global Reset ========== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* ========== Body / Background ========== */
+.qfit-body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: radial-gradient(circle at top, #20263a 0%, #050714 55%, #020308 100%);
+    color: #f5f5f5;
+    min-height: 100vh;
+}
+
+/* Wrapper to center content */
+.qfit-page-wrapper {
+    position: relative;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Optional soft gradient overlay — WITH ANIMATION */
+.qfit-bg-gradient {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at 10% 20%, rgba(88, 101, 242, 0.25) 0, transparent 40%),
+                radial-gradient(circle at 80% 80%, rgba(255, 99, 132, 0.18) 0, transparent 50%);
+    pointer-events: none;
+    z-index: -1;
+
+    /* Slow background shifting motion */
+    animation: qfit-bg-move 22s ease-in-out infinite alternate;
+}
+
+@keyframes qfit-bg-move {
+    0% { transform: translate3d(0, 0, 0) scale(1); opacity: 0.9; }
+    50% { transform: translate3d(-12px, 8px, 0) scale(1.02); opacity: 1; }
+    100% { transform: translate3d(10px, -12px, 0) scale(1.03); opacity: 0.95; }
+}
+
+/* ========== Header ========== */
+
+.qfit-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.qfit-logo-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(10, 12, 25, 0.6);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(18px);
+}
+
+.qfit-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.qfit-title-block h1.qfit-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+.qfit-title-block .qfit-subtitle {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+/* ========== Main Content ========== */
+
+.qfit-main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Glassmorphism card — ADDED FADE + SLIDE ANIMATION */
+.qfit-glass-card {
+    display: flex;
+    gap: 32px;
+    max-width: 1100px;
+    width: 100%;
+    padding: 28px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, rgba(15, 18, 35, 0.85), rgba(15, 18, 35, 0.65));
+    box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.85),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(22px);
+
+    /* Animation */
+    opacity: 0;
+    transform: translateY(18px);
+    animation: qfit-card-in 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes qfit-card-in {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========== Left Panel ========== */
+
+.qfit-left-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-right: 1px solid rgba(255, 255, 255, 0.04);
+    padding-right: 20px;
+}
+
+.qfit-hero-image-wrapper {
+    width: 100%;
+    max-height: 220px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    background: radial-gradient(circle at top, #181f3a, #0b0f21);
+}
+
+.qfit-hero-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.95;
+}
+
+.qfit-description h2 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.qfit-description p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+.qfit-description ul {
+    list-style: none;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    opacity: 0.9;
+}
+
+/* ========== Right Panel / Form ========== */
+
+.qfit-right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.qfit-form-header h2 {
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+}
+
+.qfit-form-header p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 16px;
+}
+
+.qfit-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.qfit-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.qfit-form-group label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.qfit-form-group input {
+    padding: 9px 11px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(3, 6, 20, 0.9);
+    color: #f5f5f5;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.qfit-form-group input:focus {
+    border-color: rgba(104, 123, 255, 0.9);
+    box-shadow: 0 0 0 1px rgba(104, 123, 255, 0.7);
+    background: rgba(9, 12, 32, 0.98);
+}
+
+/* Error message */
+.qfit-error-message {
+    font-size: 0.85rem;
+    color: #ff6b81;
+    background: rgba(255, 107, 129, 0.08);
+    border-radius: 8px;
+    padding: 6px 8px;
+    border: 1px solid rgba(255, 107, 129, 0.4);
+}
+
+/* Buttons */
+.qfit-btn {
+    padding: 10px 14px;
+    border-radius: 999px;
+    border: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.12s ease, box-shadow 0.15s ease, background 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Primary button — ADDED BREATHING ANIMATION */
+.qfit-btn-primary {
+    background: linear-gradient(135deg, #687bff, #4b5eff);
+    color: #ffffff;
+    box-shadow: 0 12px 25px rgba(75, 94, 255, 0.45);
+
+    animation: qfit-btn-breathe 2.8s ease-in-out infinite;
+}
+
+@keyframes qfit-btn-breathe {
+    0% { box-shadow: 0 12px 25px rgba(75, 94, 255, 0.45); transform: translateY(0); }
+    50% { box-shadow: 0 16px 35px rgba(75, 94, 255, 0.75); transform: translateY(-1px); }
+    100% { box-shadow: 0 12px 25px rgba(75, 94, 255, 0.45); transform: translateY(0); }
+}
+
+.qfit-btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 15px 30px rgba(75, 94, 255, 0.6);
+}
+
+.qfit-btn-secondary {
+    background: rgba(255, 255, 255, 0.08);
+    color: #f5f5f5;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.6);
+}
+
+.qfit-btn-secondary:hover {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* Links and divider */
+.qfit-links {
+    margin-top: 4px;
+}
+
+.qfit-link {
+    font-size: 0.85rem;
+    color: #9fb1ff;
+    text-decoration: none;
+}
+
+.qfit-link:hover {
+    text-decoration: underline;
+}
+
+.qfit-divider {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 6px 0;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.qfit-divider::before,
+.qfit-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.qfit-note {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-top: 4px;
+}
+
+/* ========== Footer ========== */
+
+.qfit-footer {
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.75;
+    margin-top: 16px;
+}
+
+/* ========== Responsive Styles ========== */
+
+@media (max-width: 900px) {
+    .qfit-glass-card {
+        flex-direction: column;
+        padding: 20px;
+        gap: 24px;
+    }
+
+    .qfit-left-panel {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding-right: 0;
+        padding-bottom: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .qfit-page-wrapper {
+        padding: 14px;
+    }
+
+    .qfit-logo-group {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .qfit-glass-card {
+        padding: 16px;
+    }
+
+    .qfit-description h2 {
+        font-size: 1.2rem;
+    }
+}
+/* ========== Register Page Styles ========== */
+
+.qfit-register-card {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.qfit-register-header h2 {
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+}
+
+.qfit-register-header p {
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.qfit-role-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.qfit-role-card {
+    background: radial-gradient(circle at top left, rgba(104, 123, 255, 0.12), rgba(5, 7, 20, 0.96));
+    border-radius: 18px;
+    padding: 16px 16px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: transform 0.16s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.qfit-role-card h3 {
+    font-size: 1.05rem;
+}
+
+.qfit-role-card p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.qfit-role-card ul {
+    list-style: none;
+    font-size: 0.85rem;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.qfit-role-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+    border-color: rgba(158, 173, 255, 0.7);
+}
+
+.qfit-role-btn {
+    margin-top: 8px;
+    width: 100%;
+}
+
+.qfit-role-btn-ghost {
+    background: transparent;
+    color: #f5f5f5;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: none;
+}
+
+.qfit-role-btn-ghost:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.qfit-role-note {
+    font-size: 0.78rem;
+    opacity: 0.8;
+    margin-top: 4px;
+}
+
+.qfit-register-footer-link {
+    margin-top: 4px;
+    font-size: 0.85rem;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 900px) {
+    .qfit-role-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* ========== User Registration Form Layout ========== */
+
+.qfit-form-card {
+    flex-direction: column;
+    gap: 18px;
+}
+
+.qfit-two-column-form {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 18px 24px;
+    align-items: flex-start;
+    margin-top: 8px;
+}
+
+.qfit-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.qfit-upload-column {
+    padding-left: 8px;
+    border-left: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.qfit-upload-box {
+    border-radius: 10px;
+    border: 1px dashed rgba(255, 255, 255, 0.25);
+    background: rgba(8, 10, 28, 0.9);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.qfit-upload-box input[type="file"] {
+    font-size: 0.85rem;
+    color: #f5f5f5;
+}
+
+.qfit-required {
+    color: #ff8080;
+    font-size: 0.8rem;
+    margin-left: 2px;
+}
+
+.qfit-form-actions {
+    grid-column: 1 / -1; /* span both columns */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.qfit-note-small {
+    font-size: 0.78rem;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 900px) {
+    .qfit-two-column-form {
+        grid-template-columns: 1fr;
+    }
+
+    .qfit-upload-column {
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+        padding-top: 10px;
+    }
+}
+/* ========== Pending Approval / Status Card ========== */
+
+.qfit-status-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.qfit-status-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.qfit-status-circle {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    border: 2px solid rgba(159, 177, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at top, rgba(159, 177, 255, 0.25), rgba(8, 10, 26, 0.95));
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.8);
+    animation: qfit-pulse 1.8s ease-in-out infinite;
+}
+
+.qfit-status-check {
+    font-size: 2.1rem;
+    color: #cfd7ff;
+}
+
+@keyframes qfit-pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.8);
+    }
+    50% {
+        transform: scale(1.06);
+        box-shadow: 0 20px 55px rgba(159, 177, 255, 0.8);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.8);
+    }
+}
+
+.qfit-status-text h2 {
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+}
+
+.qfit-status-text p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    margin-bottom: 6px;
+}
+
+.qfit-status-text ul {
+    list-style: disc;
+    margin-top: 6px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 0.9rem;
+    opacity: 0.88;
+}
+
+.qfit-status-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+    .qfit-status-card {
+        padding: 20px;
+    }
+
+    .qfit-status-text ul {
+        padding-left: 18px;
+    }
+}
+/* ========== Admin Dashboard Styles ========== */
+
+.qfit-admin-card {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.qfit-admin-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.qfit-admin-heading {
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+}
+
+.qfit-admin-subtext {
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.qfit-admin-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(0, 180, 120, 0.15);
+    border: 1px solid rgba(0, 220, 150, 0.5);
+    font-size: 0.8rem;
+    color: #bfffe5;
+}
+
+.qfit-admin-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #4cffb0;
+    box-shadow: 0 0 8px rgba(76, 255, 176, 0.9);
+}
+
+/* Summary row */
+.qfit-admin-summary {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.qfit-admin-summary-item {
+    padding: 12px 12px 10px;
+    border-radius: 14px;
+    background: radial-gradient(circle at top left, rgba(104, 123, 255, 0.16), rgba(6, 9, 28, 0.98));
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.7);
+}
+
+.qfit-admin-summary-label {
+    font-size: 0.8rem;
+    opacity: 0.85;
+    margin-bottom: 4px;
+}
+
+.qfit-admin-summary-value {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.qfit-admin-summary-note {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+/* Main grid */
+.qfit-admin-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    gap: 20px;
+    margin-top: 8px;
+}
+
+.qfit-admin-section h3 {
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+}
+
+.qfit-admin-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+/* Notes list */
+.qfit-admin-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 8px;
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.qfit-admin-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    margin-right: 6px;
+}
+
+.qfit-pill-pending {
+    background: rgba(255, 196, 86, 0.18);
+    color: #ffd27a;
+    border: 1px solid rgba(255, 207, 107, 0.7);
+}
+
+.qfit-pill-info {
+    background: rgba(159, 177, 255, 0.18);
+    color: #c8d1ff;
+    border: 1px solid rgba(159, 177, 255, 0.7);
+}
+
+.qfit-admin-footer-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 6px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .qfit-admin-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .qfit-admin-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .qfit-admin-header-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+/* ========== Admin User Management (Tables) ========== */
+
+.qfit-admin-manage-card {
+    flex-direction: column;
+    gap: 18px;
+}
+
+.qfit-admin-manage-header {
+    margin-bottom: 4px;
+}
+
+.qfit-admin-breadcrumb {
+    font-size: 0.85rem;
+    opacity: 0.85;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.qfit-admin-breadcrumb span:last-child {
+    opacity: 0.9;
+}
+
+.qfit-btn-sm {
+    padding: 7px 12px;
+    font-size: 0.8rem;
+}
+
+/* Filter row */
+.qfit-admin-filter-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 4px;
+}
+
+.qfit-admin-toggle-group {
+    display: inline-flex;
+    background: rgba(10, 12, 28, 0.85);
+    border-radius: 999px;
+    padding: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.qfit-toggle-btn {
+    border: none;
+    background: transparent;
+    color: #c4c9ff;
+    font-size: 0.8rem;
+    padding: 5px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.qfit-toggle-btn-active {
+    background: linear-gradient(135deg, #687bff, #4b5eff);
+    color: #ffffff;
+}
+
+.qfit-admin-search input {
+    background: rgba(5, 7, 20, 0.95);
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    color: #f5f5f5;
+    min-width: 200px;
+}
+
+/* Table */
+.qfit-admin-table-section {
+    margin-top: 6px;
+}
+
+.qfit-table-wrapper {
+    margin-top: 8px;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(4, 6, 18, 0.96);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8);
+}
+
+.qfit-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+.qfit-table thead {
+    background: linear-gradient(135deg, rgba(104, 123, 255, 0.5), rgba(24, 30, 70, 0.95));
+}
+
+.qfit-table th,
+.qfit-table td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.qfit-table th {
+    font-weight: 500;
+    opacity: 0.95;
+}
+
+.qfit-table tbody tr:nth-child(even) {
+    background: rgba(10, 12, 30, 0.95);
+}
+
+.qfit-table tbody tr:nth-child(odd) {
+    background: rgba(6, 8, 22, 0.98);
+}
+
+.qfit-table-actions {
+    white-space: nowrap;
+    display: flex;
+    gap: 6px;
+}
+
+/* Approve / Reject buttons */
+.qfit-btn-approve {
+    background: rgba(0, 190, 130, 0.9);
+    color: #ffffff;
+    box-shadow: 0 8px 18px rgba(0, 190, 130, 0.6);
+}
+
+.qfit-btn-approve:hover {
+    background: rgba(0, 210, 150, 0.95);
+}
+
+.qfit-btn-reject {
+    background: rgba(255, 99, 132, 0.9);
+    color: #ffffff;
+    box-shadow: 0 8px 18px rgba(255, 99, 132, 0.6);
+}
+
+.qfit-btn-reject:hover {
+    background: rgba(255, 120, 150, 0.96);
+}
+
+/* Info note spacing */
+.qfit-admin-info-note {
+    margin-top: 4px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .qfit-admin-filter-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .qfit-admin-search input {
+        width: 100%;
+    }
+
+    .qfit-table th,
+    .qfit-table td {
+        padding: 6px 8px;
+        font-size: 0.8rem;
+    }
+}
+/* ========== Account Status Badges (All Accounts) ========== */
+
+.qfit-status-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.qfit-status-active {
+    background: rgba(0, 190, 130, 0.18);
+    color: #9fffd5;
+    border: 1px solid rgba(0, 210, 150, 0.8);
+}
+
+.qfit-status-disabled {
+    background: rgba(130, 130, 130, 0.22);
+    color: #e0e0e0;
+    border: 1px solid rgba(170, 170, 170, 0.8);
+}
+/* ========== Admin Roles & Permissions ========== */
+
+.qfit-admin-roles-card {
+    flex-direction: column;
+    gap: 18px;
+}
+
+.qfit-admin-roles-intro {
+    margin-top: 4px;
+}
+
+.qfit-admin-roles-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.1fr);
+    gap: 18px;
+    margin-top: 8px;
+}
+
+.qfit-admin-assign-card {
+    padding: 14px;
+    border-radius: 18px;
+    background: radial-gradient(circle at top left, rgba(104, 123, 255, 0.16), rgba(6, 9, 28, 0.98));
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8);
+}
+
+/* Assign form */
+.qfit-assign-form {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.qfit-assign-form select,
+.qfit-assign-form textarea {
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(3, 6, 20, 0.96);
+    color: #f5f5f5;
+    font-size: 0.85rem;
+    outline: none;
+    resize: vertical;
+    min-height: 40px;
+}
+
+.qfit-assign-form select:focus,
+.qfit-assign-form textarea:focus {
+    border-color: rgba(104, 123, 255, 0.9);
+    box-shadow: 0 0 0 1px rgba(104, 123, 255, 0.6);
+}
+
+.qfit-assign-actions {
+    margin-top: 4px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Compact table variants */
+.qfit-table-wrapper-compact {
+    margin-top: 8px;
+}
+
+.qfit-table-compact th,
+.qfit-table-compact td {
+    padding: 6px 8px;
+    font-size: 0.8rem;
+}
+
+/* Role pills */
+.qfit-role-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.qfit-role-student {
+    background: rgba(104, 123, 255, 0.2);
+    color: #c2caff;
+    border: 1px solid rgba(104, 123, 255, 0.8);
+}
+
+.qfit-role-coach {
+    background: rgba(0, 190, 130, 0.2);
+    color: #9fffd5;
+    border: 1px solid rgba(0, 210, 150, 0.8);
+}
+
+.qfit-role-admin {
+    background: rgba(255, 196, 86, 0.24);
+    color: #ffe0a0;
+    border: 1px solid rgba(255, 207, 107, 0.9);
+}
+
+/* Roles matrix spacing */
+.qfit-admin-roles-matrix {
+    margin-top: 16px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .qfit-admin-roles-grid {
+        grid-template-columns: 1fr;
+    }
+}

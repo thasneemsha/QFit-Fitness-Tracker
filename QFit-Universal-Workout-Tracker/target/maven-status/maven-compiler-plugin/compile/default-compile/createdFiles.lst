@@ -1,0 +1,6 @@
+com\qfit\controllers\RejectUserServlet.class
+com\qfit\models\User.class
+com\qfit\utils\PasswordUtil.class
+com\qfit\dao\UserDao.class
+com\qfit\controllers\ApproveUserServlet.class
+com\qfit\controllers\RegisterUserServlet.class
