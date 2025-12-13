@@ -1,0 +1,25 @@
+@startuml
+title QFit - Use Case (User Account Management)
+left to right direction
+skinparam packageStyle rectangle
+
+actor "User" as User
+
+rectangle "QFit Universal Workout Tracker" {
+  (Register Account)
+  (Log In)
+  (Log Out)
+  (Manage Account Settings)
+  (Update Profile)
+  (Reset Password)
+}
+
+User --> (Register Account)
+User --> (Log In)
+User --> (Log Out)
+User --> (Manage Account Settings)
+
+(Manage Account Settings) .> (Update Profile) : <<include>>
+(Manage Account Settings) .> (Reset Password) : <<include>>
+
+@enduml
