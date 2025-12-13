@@ -1,0 +1,62 @@
+@startuml
+title SEQ-03 - Biometric Sync (OAuth + API) (UC-03 / FR-5)
+
+actor User
+boundary "Web Browser (UI)" as UI
+control "BiometricController\n(Servlet/JSP)" as Controller
+control "BiometricService" as Service
+control "OAuthClient\n(Google/Apple)" as OAuth
+entity "BiometricDAO" as DAO
+database "MySQL Database" as DB
+actor "External Fitness Provider\n(Google Fit / Apple Health)" as Provider
+
+User -> UI: Click "Connect Provider"
+UI -> Controller: GET /biometrics/connect?provider=google|apple
+Controller -> OAuth: buildAuthUrl(provider)
+OAuth --> Controller: authUrl
+Controller --> UI: 302 Redirect to Provider OAuth
+
+UI -> Provider: Redirect user to consent screen
+Provider --> UI: Redirect back with authCode
+
+UI -> Controller: GET /biometrics/callback?code=authCode
+Controller -> Service: handleOAuthCallback(authCode, provider)
+
+Service -> OAuth: exchangeCodeForToken(authCode)
+OAuth -> Provider: POST /oauth/token (code)
+Provider --> OAuth: accessToken + refreshToken + expiresIn
+OAuth --> Service: tokenResponse
+
+Service -> DAO: saveProviderTokens(userId, provider, tokens)
+DAO -> DB: INSERT/UPDATE tokens (encrypted/hashed as required)
+DB --> DAO: success
+DAO --> Service: success
+
+Service -> OAuth: fetchBiometricData(accessToken)
+OAuth -> Provider: GET /biometrics (steps, calories, HR, etc.)
+Provider --> OAuth: biometricPayload
+OAuth --> Service: biometricPayload
+
+Service -> DAO: upsertBiometricData(userId, biometricPayload)
+DAO -> DB: INSERT/UPDATE biometric rows
+DB --> DAO: success
+DAO --> Service: success
+
+Service --> Controller: syncSuccess(lastSyncTime)
+Controller --> UI: Render dashboard (connected + lastSyncTime)
+UI --> User: Show "Connected" + latest data
+
+alt User denies consent / cancels
+  Provider --> UI: Redirect back with error=access_denied
+  UI -> Controller: GET /biometrics/callback?error=access_denied
+  Controller --> UI: Show "Connection cancelled"
+end
+
+alt Token expired / revoked OR API error
+  Provider --> OAuth: 401/403 OR 5xx
+  OAuth --> Service: errorResponse
+  Service --> Controller: notifySyncError(error)
+  Controller --> UI: Show sync error message (FR5.9)
+end
+
+@enduml
