@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %> <%-- <<< ADD THIS LINE --%>
 <%-- Set the Plan object loaded by PlanDetailsServlet into a variable --%>
 <c:set var="plan" value="${requestScope.plan}" />
 <c:set var="user" value="${sessionScope.currentUser}" />
