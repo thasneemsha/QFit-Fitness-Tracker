@@ -1,4 +1,4 @@
-# QFit Universal Workout Tracker – Scrum Sprint History (Weeks 1–7)
+# QFit Fitness Tracker – Scrum Sprint History (Weeks 1–7)
 
 ## Scrum Team Roles
 
