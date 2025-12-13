@@ -1,0 +1,51 @@
+@startuml
+title QFit - Use Case (Biometric Tracking & API Integration)
+left to right direction
+skinparam packageStyle rectangle
+
+actor "User" as User
+actor "External Fitness Provider\n(Google Fit / Apple Health)" as Provider
+
+rectangle "QFit Universal Workout Tracker" {
+
+  (Connect External Provider) as UC_Connect
+  (Authorize Provider Access) as UC_Authorize
+  (Sync Biometric Data) as UC_Sync
+  (Refresh Biometric Data) as UC_Refresh
+  (View Biometric Data on Dashboard) as UC_ViewBio
+  (Disconnect Provider) as UC_Disconnect
+  (Notify Sync Error) as UC_Error
+}
+
+' -------------------------
+' Actor associations (solid)
+' -------------------------
+User --> UC_Connect
+User --> UC_Refresh
+User --> UC_ViewBio
+User --> UC_Disconnect
+
+Provider --> UC_Authorize
+Provider --> UC_Sync
+
+' ---------------------------------------
+' Use case relationships (dashed only)
+' ---------------------------------------
+UC_Connect .> UC_Authorize : <<include>>
+UC_Authorize .> UC_Sync : <<include>>
+UC_Refresh .> UC_Sync : <<include>>
+
+UC_Error .> UC_Sync : <<extend>>
+
+note right of UC_Connect
+  Precondition:
+  User is authenticated (logged in)
+end note
+
+note top of UC_Sync
+  Notes:
+  Sync runs automatically at least once per day (FR5.3)
+  and can be triggered manually via Refresh (FR5.4).
+end note
+
+@enduml
