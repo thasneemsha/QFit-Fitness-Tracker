@@ -163,14 +163,6 @@
     * kjkj
   
   <br>
-   
-   ***Glossary***
-  | Term | Definition |
-  | :--- | :--- |
-  | **Session** | The record of a single workout instance (date, plan used, duration). |
-  | **Performance Set** | The raw data recorded for one set of an exercise (actual reps, actual weight). |
-  | **RPE** | Rate of Perceived Exertion (how hard the set felt, on a scale of 1-10). |
-  | **Pending Status** | Your account has been registered but is awaiting Admin approval to unlock core logging features. |
   ---
   </details>
 
