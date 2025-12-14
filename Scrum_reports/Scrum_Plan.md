@@ -6,7 +6,7 @@
 | :--- | :--- | :--- |
 | **Sonu** | Scrum Master & Backend Lead (Servlets, Logic, Documentation) | [feature/sonu-scrum-backend](https://github.com/thasneemsha/QFit-Fitness-Tracker/tree/feature/sonu-scrum-backend) |
 | **Bryan** | Product Owner & Backend Integration (Servlets, Routing, AWS) | [feature/bryan-devops-aws](https://github.com/thasneemsha/QFit-Fitness-Tracker/tree/feature/bryan-devops-aws) |
-| **Thasneem** | Front-End Coordinator & Schema/Issues (UI, Schema, Manuals) | [feature/thasneem-frontend-ui-ux](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/feature/thasneem-frontend-ui-ux) |
+| **Thasneem** | Front-End Coordinator & Schema/Issues (UI, Schema, Manuals) | [feature/thasneem-frontend-ui-ux](https://github.com/thasneemsha/QFit-Fitness-Tracker/tree/feature/thasneem-frontend-ui-ux) |
 | **Ali** | Front-End Developer, Tester & Architect (UI, Testing, Diagrams) | [feature/ali-frontend-arch](https://github.com/thasneemsha/QFit-Fitness-Tracker/tree/feature/ali-frontend-arch) |
 </br>
 
