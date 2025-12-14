@@ -61,8 +61,8 @@
 | :--- | :--- | :--- | :--- |
 | **Sonu** - Backend Lead | Created Eclipse project structure; configured Servlets environment; Implemented initial User Data Access Objects (DAOs). | `[Pending]` |
 | **Bryan** - Backend Integration | Set up Tomcat deployment pipeline; implemented core CSS framework and styling (for integration layer). | `[Pending]` |
-| **Thasneem** - Front-End/Schema | Developed **`userDashboard.jsp`** and the base structure for **`profile.jsp`**. | `[Pending]` |
-| **Ali** - Front-End Developer | Developed **`index.jsp` (Login Page)**,**`register.jsp`**, and the **`adminDashboard.jsp`**. | `[Pending]` |
+| **Thasneem** - Front-End/Schema | Developed **`userDashboard.jsp`** and the base structure for **`profile.jsp`**. | `[Pending]` | [userDashboard.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/userDashboard.jsp), [profile.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/profile.jsp)
+| **Ali** - Front-End Developer | Developed **`index.jsp` (Login Page)**,**`register.jsp`**,**`pendingAproval.jsp`**, and the **`adminDashboard.jsp`**. | `[Pending]` | [Descriptive Text](URL Goes Here)
 <br>
 
 ---
@@ -89,7 +89,7 @@
 | :--- | :--- | :--- | :--- |
 | **Sonu** - Scrum Master/Backend | Implemented **`LoginServlet`** and **`RegisterServlet`** logic. Tested JDBC connection and servlet routing. | `[Pending]` |
 | **Bryan** - Backend Integration | Connected JSP forms to servlet endpoints (routing). Debugged servlet routing (POST/GET fixes). Began testing servlet responses. | `[Pending]` |
-| **Thasneem** - Front-End/Schema | Developed **`workoutHistory.jsp`**, **`viewSession.jsp`**,**`error.jsp`**, **`logWorkout.jsp`**, **`editPlan.jsp`**, and **`planDetails.jsp`** pages. | `[Pending]` |
+| **Thasneem** - Front-End/Schema | Developed **`workoutHistory.jsp`**, **`viewSession.jsp`**,**`error.jsp`**, **`logWorkout.jsp`**, **`editPlan.jsp`**, and **`planDetails.jsp`** pages. | `[Pending]` | [workoutHistory.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/workoutHistory.jsp) ,[viewSession.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/viewSession.jsp) ,[error.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/error.jsp) , [logWorkout.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/logWorkout.jsp) ,[editPlan.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/editPlan.jsp) , [planDetails.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/planDetails.jsp)
 | **Ali** - Front-End Developer/Tester | Updated architecture diagram. Refined and exported sequence diagrams, Use-case diagram, Ui-screenshots | `[Pending]` |
 <br>
 
@@ -103,6 +103,6 @@
 | :--- | :--- | :--- | :--- |
 | **Sonu** - Scrum Master/Backend | Completed remaining servlet logic and testing. Finalized Sprint reports and final workout-flow. Cleaned and organized the final GitHub repository. | `[Pending]` |
 | **Bryan** - Backend Integration | Completed front-end integration with all servlets. Fixed UI/servlet mismatches. Conducted **final UI walkthrough for demo flow** (rehearsal). | `[Pending]` |
-| **Thasneem** - Front-End/Schema | Finalized schema for mySql. Wrote the **User/Admin manuals**. Managed the final GitHub Issues close-out. | `[Pending]` |
+| **Thasneem** - Front-End/Schema | Finalized schema for mySql. Wrote the **User/Admin manuals**. Managed the final GitHub Issues close-out. | `[Pending]` | [Manual.md](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/Manual.md), [Schema_DDl](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/Schema_DDL.md)
 | **Ali** - Front-End Developer/Tester | Produced the **final architecture diagram** and all final sequence diagrams. Performed final integration testing. | `[Pending]` |
 <br>
