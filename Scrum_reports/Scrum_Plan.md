@@ -13,7 +13,7 @@
 ---
 ## 📅 Sprint 1 – Discovery Phase
 **Duration:** Week 1 (11/2/25 – 11/8/25)
-**Goal:** Understand the problem domain, define key system actors, and gather initial requirements.
+>**Goal:** Understand the problem domain, define key system actors, and gather initial requirements.
 
 | Name & Role | Contribution Focus | Burndown Chart URL |
 | :--- | :--- | :--- |
@@ -27,7 +27,7 @@
 
 ## 📅 Sprint 2 – Requirements Refinement
 **Duration:** Week 2 (11/9/25 – 11/15/25)
-**Goal:** Refine requirements, update system architecture, and finalize the initial product backlog.
+>**Goal:** Refine requirements, update system architecture, and finalize the initial product backlog.
 
 | Name & Role | Contribution Focus | Burndown Chart URL |
 | :--- | :--- | :--- |
@@ -41,7 +41,7 @@
 
 ## 📅 Sprint 3 – Transition to Development
 **Duration:** Week 3 (11/16/25 – 11/22/25)
-**Goal:** Finalize discovery documentation and prepare technical foundations for the coding phase.
+>**Goal:** Finalize discovery documentation and prepare technical foundations for the coding phase.
 
 | Name & Role | Contribution Focus | Burndown Chart URL |
 | :--- | :--- | :--- |
@@ -55,10 +55,10 @@
 
 ## 📅 Sprint 4 – Frontend UI Development (Phase 1)
 **Duration:** Week 4 (11/23/25 – 11/29/25)
-**Goal:** Complete foundational setup (Servlets/JSP project) and develop initial core user views.
+>**Goal:** Complete foundational setup (Servlets/JSP project) and develop initial core user views.
 
-| Name & Role | Contribution Focus | Burndown Chart URL |
-| :--- | :--- | :--- |
+| Name & Role | Contribution Focus | Burndown Chart URL | code base |
+| :--- | :--- | :--- | :--- |
 | **Sonu** - Backend Lead | Created Eclipse project structure; configured Servlets environment; Implemented initial User Data Access Objects (DAOs). | `[Pending]` |
 | **Bryan** - Backend Integration | Set up Tomcat deployment pipeline; implemented core CSS framework and styling (for integration layer). | `[Pending]` |
 | **Thasneem** - Front-End/Schema | Developed **`userDashboard.jsp`** and the base structure for **`profile.jsp`**. | `[Pending]` |
@@ -69,10 +69,10 @@
 
 ## 📅 Sprint 5 – Discovery Reset & System Realignment
 **Duration:** Week 5 (11/30/25 – 12/6/25)
-**Goal:** Realign project scope with professor feedback; rewrite requirements, diagrams, and system flows based on the updated 3-actor model.
+>**Goal:** Realign project scope with professor feedback; rewrite requirements, diagrams, and system flows based on the updated 3-actor model.
 
-| Name & Role | Contribution Focus | Burndown Chart URL |
-| :--- | :--- | :--- |
+| Name & Role | Contribution Focus | Burndown Chart URL | code base |
+| :--- | :--- | :--- | :--- |
 | **Sonu** - Scrum Master/Backend | Updated stakeholder requirements and documentation. Wrote Sprint/Scrum reports, README, and GitHub introduction. | `[Pending]` |
 | **Bryan** - Product Owner/Integration | Updated functional requirements and revised interview questions. | `[Pending]` |
 | **Thasneem** - Front-End/Schema | Established the foundational GitHub repository structure and project management framework. (GitHub Setup, Issues, Kanban/Sprints,...) | `[Pending]` |
@@ -83,10 +83,10 @@
 
 ## 📅 Sprint 6 – Core Backend & Integration Implementation
 **Duration:** Week 6 (12/7/25 – 12/13/25)
-**Goal:** Implement core servlets (`Login`, `Register`, `Workout`), finalize all remaining JSPs, and align architecture.
+>**Goal:** Implement core servlets (`Login`, `Register`, `Workout`), finalize all remaining JSPs, and align architecture.
 
-| Name & Role | Contribution Focus | Burndown Chart URL |
-| :--- | :--- | :--- |
+| Name & Role | Contribution Focus | Burndown Chart URL | code base |
+| :--- | :--- | :--- | :--- |
 | **Sonu** - Scrum Master/Backend | Implemented **`LoginServlet`** and **`RegisterServlet`** logic. Tested JDBC connection and servlet routing. | `[Pending]` |
 | **Bryan** - Backend Integration | Connected JSP forms to servlet endpoints (routing). Debugged servlet routing (POST/GET fixes). Began testing servlet responses. | `[Pending]` |
 | **Thasneem** - Front-End/Schema | Developed **`workoutHistory.jsp`**, **`viewSession.jsp`**,**`error.jsp`**, **`logWorkout.jsp`**, **`editPlan.jsp`**, and **`planDetails.jsp`** pages. | `[Pending]` |
@@ -97,10 +97,10 @@
 
 ## 📅 Sprint 7 – Final Integration & Submission
 **Duration:** Week 7 (12/14/25 – 12/20/25)
-**Goal:** Finalize all servlets, complete documentation, and verify the final application state.
+>**Goal:** Finalize all servlets, complete documentation, and verify the final application state.
 
-| Name & Role | Contribution Focus | Burndown Chart URL |
-| :--- | :--- | :--- |
+| Name & Role | Contribution Focus | Burndown Chart URL | code base |
+| :--- | :--- | :--- | :--- |
 | **Sonu** - Scrum Master/Backend | Completed remaining servlet logic and testing. Finalized Sprint reports and final workout-flow. Cleaned and organized the final GitHub repository. | `[Pending]` |
 | **Bryan** - Backend Integration | Completed front-end integration with all servlets. Fixed UI/servlet mismatches. Conducted **final UI walkthrough for demo flow** (rehearsal). | `[Pending]` |
 | **Thasneem** - Front-End/Schema | Finalized schema for mySql. Wrote the **User/Admin manuals**. Managed the final GitHub Issues close-out. | `[Pending]` |
