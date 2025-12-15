@@ -6,7 +6,7 @@
 | :--- | :--- | :--- |
 | **Sonu** | Scrum Master & Backend Lead (Servlets, Logic, Documentation) | [feature/sonu-scrum-backend](https://github.com/thasneemsha/QFit-Fitness-Tracker/tree/feature/sonu-scrum-backend) |
 | **Bryan** | Product Owner & Backend Integration (Servlets, Routing, AWS) | [feature/bryan-devops-aws](https://github.com/thasneemsha/QFit-Fitness-Tracker/tree/feature/bryan-devops-aws) |
-| **Thasneem** | Front-End Coordinator & Schema/Issues (UI, Schema, Manuals)[FullSprint](https://cuny-my.sharepoint.com/:x:/g/personal/thasneem_mohamed29_qmail_cuny_edu/IQBK3DB92BtbSJ9Zq57A47ayAZRfgrPPJzGx3wlJGkgYKJw?e=lngZrh) | [feature/thasneem-frontend-ui-ux](https://github.com/thasneemsha/QFit-Fitness-Tracker/tree/feature/thasneem-frontend-ui-ux) |
+| **Thasneem** | Front-End Coordinator & Schema/Issues (UI, Schema, Manuals) | [feature/thasneem-frontend-ui-ux](https://github.com/thasneemsha/QFit-Fitness-Tracker/tree/feature/thasneem-frontend-ui-ux) |
 | **Ali** | Front-End Developer, Tester & Architect (UI, Testing, Diagrams) | [feature/ali-frontend-arch](https://github.com/thasneemsha/QFit-Fitness-Tracker/tree/feature/ali-frontend-arch) |
 </br>
 
@@ -19,7 +19,7 @@
 | :--- | :--- | :--- |
 | **Sonu** - Scrum Master | Facilitated the first meeting; ensured Scrum discipline. | `[Pending]` |
 | **Bryan** - Product Owner | Identified system actors and drafted initial stakeholder interview questions. | `[Pending]` |
-| **Thasneem** - Front-End Coordinator | *Joined 11/11/25 (Post-Sprint)* | `[N/A]` |
+| **Thasneem** - Front-End Coordinator | *Joined 11/11/25 (Post-Sprint)* | [FullSprint](https://cuny-my.sharepoint.com/:x:/g/personal/thasneem_mohamed29_qmail_cuny_edu/IQBK3DB92BtbSJ9Zq57A47ayAZRfgrPPJzGx3wlJGkgYKJw?e=lngZrh) |
 | **Ali** - Front-End Developer | *Not Yet Active* | `[Pending]` |
 <br>
 
@@ -32,7 +32,7 @@
 | Name & Role | Contribution Focus | Burndown Chart URL |
 | :--- | :--- | :--- |
 | **Sonu** - Scrum Master | Updated use case diagrams; adjusted scope (removed location modules). | `[Pending]` |
-| **Bryan** - Product Owner | Clarified and reorganized functional requirements; revised system description. | `[Pending]` |
+| **Bryan** - Product Owner | Clarified and reorganized functional requirements; revised system description. | [FullSprint](https://cuny-my.sharepoint.com/:x:/g/personal/thasneem_mohamed29_qmail_cuny_edu/IQBK3DB92BtbSJ9Zq57A47ayAZRfgrPPJzGx3wlJGkgYKJw?e=lngZrh) |
 | **Thasneem** - Front-End Coordinator | *Initial team onboarding.* (started personal Interviews) | `[N/A]` |
 | **Ali** - Front-End Developer | *Not Yet Active* | `[Pending]` |
 <br>
