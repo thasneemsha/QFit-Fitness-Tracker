@@ -6,7 +6,7 @@
 | :--- | :--- | :--- |
 | **Sonu** | Scrum Master & Backend Lead (Servlets, Logic, Documentation) | [feature/sonu-scrum-backend](https://github.com/thasneemsha/QFit-Fitness-Tracker/tree/feature/sonu-scrum-backend) |
 | **Bryan** | Product Owner & Backend Integration (Servlets, Routing, AWS) | [feature/bryan-devops-aws](https://github.com/thasneemsha/QFit-Fitness-Tracker/tree/feature/bryan-devops-aws) |
-| **Thasneem** | Front-End Coordinator & Schema/Issues (UI, Schema, Manuals) | [feature/thasneem-frontend-ui-ux](https://github.com/thasneemsha/QFit-Fitness-Tracker/tree/feature/thasneem-frontend-ui-ux) |
+| **Thasneem** | Front-End Coordinator & Schema/Issues (UI, Schema, Manuals)[FullSprint](https://cuny-my.sharepoint.com/:x:/g/personal/thasneem_mohamed29_qmail_cuny_edu/IQBK3DB92BtbSJ9Zq57A47ayAZRfgrPPJzGx3wlJGkgYKJw?e=lngZrh) | [feature/thasneem-frontend-ui-ux](https://github.com/thasneemsha/QFit-Fitness-Tracker/tree/feature/thasneem-frontend-ui-ux) |
 | **Ali** | Front-End Developer, Tester & Architect (UI, Testing, Diagrams) | [feature/ali-frontend-arch](https://github.com/thasneemsha/QFit-Fitness-Tracker/tree/feature/ali-frontend-arch) |
 </br>
 
@@ -19,7 +19,7 @@
 | :--- | :--- | :--- |
 | **Sonu** - Scrum Master | Facilitated the first meeting; ensured Scrum discipline. | `[Pending]` |
 | **Bryan** - Product Owner | Identified system actors and drafted initial stakeholder interview questions. | `[Pending]` |
-| **Thasneem** - Front-End Coordinator | *Joined 11/11/25 (Post-Sprint)* | `[Pending]` |
+| **Thasneem** - Front-End Coordinator | *Joined 11/11/25 (Post-Sprint)* | `[N/A]` |
 | **Ali** - Front-End Developer | *Not Yet Active* | `[Pending]` |
 <br>
 
@@ -33,7 +33,7 @@
 | :--- | :--- | :--- |
 | **Sonu** - Scrum Master | Updated use case diagrams; adjusted scope (removed location modules). | `[Pending]` |
 | **Bryan** - Product Owner | Clarified and reorganized functional requirements; revised system description. | `[Pending]` |
-| **Thasneem** - Front-End Coordinator | *Initial team onboarding.* (started personal Interviews) | `[Pending]` |
+| **Thasneem** - Front-End Coordinator | *Initial team onboarding.* (started personal Interviews) | `[N/A]` |
 | **Ali** - Front-End Developer | *Not Yet Active* | `[Pending]` |
 <br>
 
@@ -47,7 +47,7 @@
 | :--- | :--- | :--- |
 | **Sonu** - Scrum Master/Backend | Managed sprint progression; prepared team role split for development tasks. | `[Pending]` |
 | **Bryan** - Product Owner | Completed stakeholder interviews, updated requirements, finished Traceability Matrix, prepared AWS infrastructure. | `[Pending]` |
-| **Thasneem** - Front-End/Schema | Created GitHub repository; researched web UI structure; began designing database schemas (initial conceptual phase only). | `[Pending]` |
+| **Thasneem** - Front-End/Schema | Created GitHub repository; researched web UI structure; began designing database schemas (initial conceptual phase only). | [Sprint-3](https://cuny-my.sharepoint.com/:x:/g/personal/thasneem_mohamed29_qmail_cuny_edu/IQBK3DB92BtbSJ9Zq57A47ayAZRfgrPPJzGx3wlJGkgYKJw?e=hc1rJF&nav=MTVfe0ZBNjQ5MjAzLTI2MTAtNDUzNi05NTA5LUUzNjMwQjdEODhEMn0) |
 | **Ali** - Front-End Developer | Researched front-end testing frameworks (initial preparation). | `[Pending]` |
 <br>
 
@@ -61,7 +61,7 @@
 | :--- | :--- | :--- | :--- |
 | **Sonu** - Backend Lead | Created Eclipse project structure; configured Servlets environment; Implemented initial User Data Access Objects (DAOs). | `[Pending]` |
 | **Bryan** - Backend Integration | Set up Tomcat deployment pipeline; implemented core CSS framework and styling (for integration layer). | `[Pending]` |
-| **Thasneem** - Front-End/Schema | Developed **`userDashboard.jsp`** and the base structure for **`profile.jsp`**. | `[Pending]` | [userDashboard.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/userDashboard.jsp), [profile.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/profile.jsp)
+| **Thasneem** - Front-End/Schema | Developed **`userDashboard.jsp`** and the base structure for **`profile.jsp`**. | [Sprint-4](https://cuny-my.sharepoint.com/:x:/g/personal/thasneem_mohamed29_qmail_cuny_edu/IQBK3DB92BtbSJ9Zq57A47ayAZRfgrPPJzGx3wlJGkgYKJw?e=BY0wgA&nav=MTVfe0RDMkM5Q0I4LUFGMzgtNEVDRC1BRTBELUM1ODk5NTFGNTlEQX0) | [userDashboard.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/userDashboard.jsp), [profile.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/profile.jsp)
 | **Ali** - Front-End Developer | Developed **`index.jsp` (Login Page)**,**`register.jsp`**,**`pendingAproval.jsp`**, and the **`adminDashboard.jsp`**. | `[Pending]` | [Descriptive Text](URL Goes Here)
 <br>
 
@@ -75,7 +75,7 @@
 | :--- | :--- | :--- | :--- |
 | **Sonu** - Scrum Master/Backend | Updated stakeholder requirements and documentation. Wrote Sprint/Scrum reports, README, and GitHub introduction. | `[Pending]` |
 | **Bryan** - Product Owner/Integration | Updated functional requirements and revised interview questions. | `[Pending]` |
-| **Thasneem** - Front-End/Schema | Established the foundational GitHub repository structure and project management framework. (GitHub Setup, Issues, Kanban/Sprints,...) | `[Pending]` |
+| **Thasneem** - Front-End/Schema | Established the foundational GitHub repository structure and project management framework. (GitHub Setup, Issues, Kanban/Sprints,...) | [Sprint-5](https://cuny-my.sharepoint.com/:x:/g/personal/thasneem_mohamed29_qmail_cuny_edu/IQBK3DB92BtbSJ9Zq57A47ayAZRfgrPPJzGx3wlJGkgYKJw?e=vkFpHa&nav=MTVfe0IyOUVERjU1LUE3MTAtNEFDOC04MEYyLTdFMUMzRjY1QjkyQX0) | `[--]`
 | **Ali** - Front-End Developer/Tester | Updated architecture and sequence diagrams (v2) to align with the new system flows. | `[Pending]` |
 <br>
 
@@ -89,7 +89,7 @@
 | :--- | :--- | :--- | :--- |
 | **Sonu** - Scrum Master/Backend | Implemented **`LoginServlet`** and **`RegisterServlet`** logic. Tested JDBC connection and servlet routing. | `[Pending]` |
 | **Bryan** - Backend Integration | Connected JSP forms to servlet endpoints (routing). Debugged servlet routing (POST/GET fixes). Began testing servlet responses. | `[Pending]` |
-| **Thasneem** - Front-End/Schema | Developed **`workoutHistory.jsp`**, **`viewSession.jsp`**,**`error.jsp`**, **`logWorkout.jsp`**, **`editPlan.jsp`**, and **`planDetails.jsp`** pages. | `[Pending]` | [workoutHistory.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/workoutHistory.jsp) ,[viewSession.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/viewSession.jsp) ,[error.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/error.jsp) , [logWorkout.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/logWorkout.jsp) ,[editPlan.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/editPlan.jsp) , [planDetails.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/planDetails.jsp)
+| **Thasneem** - Front-End/Schema | Developed **`workoutHistory.jsp`**, **`viewSession.jsp`**,**`error.jsp`**, **`logWorkout.jsp`**, **`editPlan.jsp`**, and **`planDetails.jsp`** pages. | [Sprint-6](https://cuny-my.sharepoint.com/:x:/g/personal/thasneem_mohamed29_qmail_cuny_edu/IQBK3DB92BtbSJ9Zq57A47ayAZRfgrPPJzGx3wlJGkgYKJw?e=IRdX0H&nav=MTVfezk1ODEzOUFCLTVDNkMtNDgwQi05MzEwLUI1QUJFRThFN0Y0RH0) | [workoutHistory.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/workoutHistory.jsp) ,[viewSession.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/viewSession.jsp) ,[error.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/error.jsp) , [logWorkout.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/logWorkout.jsp) ,[editPlan.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/editPlan.jsp) , [planDetails.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/planDetails.jsp)
 | **Ali** - Front-End Developer/Tester | Updated architecture diagram. Refined and exported sequence diagrams, Use-case diagram, Ui-screenshots | `[Pending]` |
 <br>
 
@@ -103,6 +103,6 @@
 | :--- | :--- | :--- | :--- |
 | **Sonu** - Scrum Master/Backend | Completed remaining servlet logic and testing. Finalized Sprint reports and final workout-flow. Cleaned and organized the final GitHub repository. | `[Pending]` |
 | **Bryan** - Backend Integration | Completed front-end integration with all servlets. Fixed UI/servlet mismatches. Conducted **final UI walkthrough for demo flow** (rehearsal). | `[Pending]` |
-| **Thasneem** - Front-End/Schema | Finalized schema for mySql. Wrote the **User/Admin manuals**. Managed the final GitHub Issues close-out. | `[Pending]` | [Manual.md](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/Manual.md), [Schema_DDl](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/Schema_DDL.md)
+| **Thasneem** - Front-End/Schema | Finalized schema for mySql. Wrote the **User/Admin manuals**. Managed the final GitHub Issues close-out. | [Sprint-7](https://cuny-my.sharepoint.com/:x:/g/personal/thasneem_mohamed29_qmail_cuny_edu/IQBK3DB92BtbSJ9Zq57A47ayAZRfgrPPJzGx3wlJGkgYKJw?e=gT40Hy&nav=MTVfezA5RUEzQjFELTJGMUEtNDk1My04RkFELUIzQTAzNUMwNjc1QX0) | [Manual.md](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/Manual.md), [Schema_DDl](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/Schema_DDL.md)
 | **Ali** - Front-End Developer/Tester | Produced the **final architecture diagram** and all final sequence diagrams. Performed final integration testing. | `[Pending]` |
 <br>
