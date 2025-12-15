@@ -32,8 +32,8 @@
 | Name & Role | Contribution Focus | Burndown Chart URL |
 | :--- | :--- | :--- |
 | **Sonu** - Scrum Master | Updated use case diagrams; adjusted scope (removed location modules). | `[Pending]` |
-| **Bryan** - Product Owner | Clarified and reorganized functional requirements; revised system description. | [FullSprint](https://cuny-my.sharepoint.com/:x:/g/personal/thasneem_mohamed29_qmail_cuny_edu/IQBK3DB92BtbSJ9Zq57A47ayAZRfgrPPJzGx3wlJGkgYKJw?e=lngZrh) |
-| **Thasneem** - Front-End Coordinator | *Initial team onboarding.* (started personal Interviews) | `[N/A]` |
+| **Bryan** - Product Owner | Clarified and reorganized functional requirements; revised system description. | `[Pending]`  |
+| **Thasneem** - Front-End Coordinator | *Initial team onboarding.* (started personal Interviews) | [FullSprint](https://cuny-my.sharepoint.com/:x:/g/personal/thasneem_mohamed29_qmail_cuny_edu/IQBK3DB92BtbSJ9Zq57A47ayAZRfgrPPJzGx3wlJGkgYKJw?e=lngZrh) |
 | **Ali** - Front-End Developer | *Not Yet Active* | `[Pending]` |
 <br>
 
