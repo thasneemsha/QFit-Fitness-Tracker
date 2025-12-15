@@ -12,55 +12,154 @@
 
 ---
 
-## Burndown Tracking Data (All Sprints)
+### 📈 SONU – Personal Burndown
 
-| Day Index | Date | Sprint | Ideal Remaining Work | Actual Points Completed Today | **Actual Remaining Work** | Notes |
-| :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| **0** | **11/2** | **S1** | **200.0** | 0 | **200.0** | **PROJECT START** |
-| 1 | 11/3 | S1 | 194.3 | 1.6 | 198.4 | |
-| 2 | 11/4 | S1 | 188.6 | 1.4 | 197.0 | |
-| 3 | 11/5 | S1 | 182.9 | 0 | 197.0 | |
-| 4 | 11/6 | S1 | 177.1 | 0 | 197.0 | |
-| **5** | **11/7** | **S1 End** | **171.4** | 3.0 | 194.0 | **<-- SPRINT 1 COMPLETE (3 Pts)** |
-| 6 | 11/8 | --- | 171.4 | 0 | 194.0 | **==============================** |
-| **7** | **11/9** | **S2** | **165.7** | 0 | **194.0** | **SPRINT 2 START (11 Pts)** |
-| 8 | 11/10 | S2 | 160.0 | 2.0 | 192.0 | |
-| 9 | 11/11 | S2 | 154.3 | 3.0 | 189.0 | |
-| 10 | 11/12 | S2 | 148.6 | 3.0 | 186.0 | |
-| **11** | **11/13** | **S2 End** | **142.9** | 3.0 | 183.0 | **<-- SPRINT 2 COMPLETE (11 Pts)** |
-| 12 | 11/14 | --- | 142.9 | 0 | 183.0 | **==============================** |
-| **13** | **11/16** | **S3** | **137.1** | 0 | **183.0** | **SPRINT 3 START (27 Pts)** |
-| 14 | 11/17 | S3 | 131.4 | 6.0 | 177.0 | |
-| 15 | 11/18 | S3 | 125.7 | 6.0 | 171.0 | |
-| 16 | 11/19 | S3 | 120.0 | 6.0 | 165.0 | |
-| **17** | **11/20** | **S3 End** | **114.3** | 9.0 | 156.0 | **<-- SPRINT 3 COMPLETE (27 Pts)** |
-| 18 | 11/21 | --- | 114.3 | 0 | 156.0 | **==============================** |
-| **19** | **11/23** | **S4** | **108.6** | 0 | **156.0** | **SPRINT 4 START (21 Pts)** |
-| 20 | 11/24 | S4 | 102.9 | 3.0 | 153.0 | |
-| 21 | 11/25 | S4 | 97.1 | 0 | 153.0 | *S4 Rough Start* |
-| 22 | 11/26 | S4 | 91.4 | 0 | 153.0 | |
-| **23** | **11/27** | **S4 End** | **85.7** | 18.0 | 135.0 | **<-- SPRINT 4 COMPLETE (21 Pts)** |
-| 24 | 11/28 | --- | 85.7 | 0 | 135.0 | **==============================** |
-| **25** | **11/30** | **S5** | **80.0** | 0 | **135.0** | **SPRINT 5 START (27 Pts)** |
-| 26 | 12/1 | S5 | 74.3 | 7.0 | 128.0 | |
-| 27 | 12/2 | S5 | 68.6 | 7.0 | 121.0 | |
-| 28 | 12/3 | S5 | 62.9 | 7.0 | 114.0 | |
-| 29 | 12/4 | S5 | 57.1 | 6.0 | 108.0 | |
-| **30** | **12/5** | **S5 End** | **51.4** | 0 | **108.0** | **<-- SPRINT 5 COMPLETE (27 Pts)** |
-| 31 | 12/6 | --- | 51.4 | 0 | 108.0 | **==============================** |
-| **32** | **12/7** | **S6** | **45.7** | 0 | **108.0** | **SPRINT 6 START (94 Pts)** |
-| 33 | 12/8 | S6 | 40.0 | 8.0 | 100.0 | |
-| 34 | 12/9 | S6 | 34.3 | 10.0 | 90.0 | |
-| 35 | 12/10 | S6 | 28.6 | 10.0 | 80.0 | |
-| 36 | 12/11 | S6 | 22.9 | 10.0 | 70.0 | |
-| 37 | 12/12 | S6 | 17.1 | 10.0 | 60.0 | |
-| **38** | **12/13** | **S6 End** | **11.4** | 0 | **60.0** | **<-- SPRINT 6 COMPLETE (47 Pts)** |
-| **39** | **12/14** | **S7** | **5.7** | 0 | **60.0** | **SPRINT 7 START (60 Pts Remaining)** |
-| 40 | 12/15 | S7 | 0.0 | 10.0 | 50.0 | |
-| 41 | 12/16 | S7 | 0.0 | 12.0 | 38.0 | |
-| 42 | 12/17 | S7 | 0.0 | 15.0 | 23.0 | |
-| **43** | **12/18** | **S7 Due** | **0.0** | 18.0 | **5.0** | **<-- SUBMISSION DAY! (5 Pts Rollover)** |
-| 44 | 12/19 | S7 Buffer | 0.0 | 5.0 | **0.0** | **<-- PROJECT COMPLETE** |
+| Date | Sprint | Ideal Remaining | Points Done Today | Actual Remaining | Notes |
+|-----|--------|-----------------|------------------|-----------------|-------|
+| 11/2 | S1 | 52 | 0 | 52 | Sprint 1 Start |
+| 11/3 | S1 | 50 | 2 | 50 | Initial team meeting |
+| 11/4 | S1 | 48 | 2 | 48 | Scrum planning & roles |
+| 11/5 | S1 | 46 | 2 | 46 | Defined system actors |
+| 11/6 | S1 | 44 | 2 | 44 | Drafted initial interview questions |
+| 11/7 | S1 End | 42 | 2 | 42 | Sprint 1 Complete |
+| 11/8 | --- | 42 | 0 | 42 | ============================== |
+| 11/9 | S2 | 40 | 2 | 40 | Sprint 2 Start |
+| 11/10 | S2 | 38 | 2 | 38 | Updated use case diagrams |
+| 11/11 | S2 | 36 | 2 | 36 | Adjusted scope (removed location modules) |
+| 11/12 | S2 | 34 | 2 | 34 | Refined stakeholder requirements |
+| 11/13 | S2 End | 32 | 2 | 32 | Sprint 2 Complete |
+| 11/14 | --- | 32 | 0 | 32 | ============================== |
+| 11/16 | S3 | 30 | 2 | 30 | Sprint 3 Start |
+| 11/17 | S3 | 28 | 2 | 28 | Managed sprint progression |
+| 11/18 | S3 | 26 | 2 | 26 | Prepared team role split for dev tasks |
+| 11/19 | S3 | 24 | 2 | 24 | Reviewed sprint backlog |
+| 11/20 | S3 End | 24 | 0 | 24 | Sprint 3 Complete |
+| 11/21 | --- | 24 | 0 | 24 | ============================== |
+| 11/23 | S4 | 22 | 2 | 22 | Sprint 4 Start |
+| 11/24 | S4 | 20 | 2 | 20 | Created Eclipse project structure |
+| 11/25 | S4 | 18 | 2 | 18 | Configured Servlets environment |
+| 11/26 | S4 | 16 | 2 | 16 | Implemented initial DAOs |
+| 11/27 | S4 End | 14 | 2 | 14 | Sprint 4 Complete |
+| 11/28 | --- | 14 | 0 | 14 | ============================== |
+| 11/30 | S5 | 12 | 2 | 12 | Sprint 5 Start |
+| 12/1 | S5 | 10 | 2 | 10 | Updated stakeholder docs |
+| 12/2 | S5 | 8 | 2 | 8 | Revised sprint report |
+| 12/3 | S5 | 6 | 2 | 6 | Prepared README & repo structure |
+| 12/4 | S5 | 4 | 2 | 4 | QA review & corrections |
+| 12/5 | S5 End | 2 | 2 | 2 | Sprint 5 Complete |
+| 12/6 | --- | 2 | 0 | 2 | ============================== |
+| 12/7 | S6 | 2 | 0 | 2 | Sprint 6 Start (Servlets) |
+| 12/8 | S6 | 2 | 3 | 0 | LoginServlet implementation |
+| 12/9 | S6 | 0 | 3 | 0 | RegisterServlet implementation |
+| 12/10 | S6 | 0 | 2 | 0 | WorkoutServlet / EditPlanServlet |
+| 12/11 | S6 End | 0 | 0 | 0 | Core servlet logic complete |
+| 12/14 | S7 | 0 | 0 | 0 | Sprint 7 Start |
+| 12/15 | S7 | 0 | 2 | 0 | Final servlet testing |
+| 12/16 | S7 | 0 | 2 | 0 | Fixes & integration checks |
+| 12/17 | S7 | 0 | 2 | 0 | Documentation prep |
+| 12/18 | S7 Due | 0 | 0 | 0 | Project Complete |
+---
 
-This format provides all the work we done so-for for the chart creation.
-You want something similar but with data on what you did using the myitems --> assignee@me to get all the tables with your data for your chart creation on each sprint
+### 📈 Bryan – Personal Burndown (Detailed)
+
+| Date | Sprint | Ideal Remaining | Points Done Today | Actual Remaining | Notes |
+|-----|--------|-----------------|-------------------|------------------|-------|
+| 11/2 | S1 | 50 | 0 | 50 | Sprint 1 Start |
+| 11/3 | S1 | 48 | 2 | 48 | Initial PO setup |
+| 11/4 | S1 | 46 | 2 | 46 | Requirements gathering |
+| 11/5 | S1 | 44 | 2 | 44 | Stakeholder interview prep |
+| 11/6 | S1 | 42 | 2 | 42 | Sprint 1 wrap-up |
+| 11/7 | S1 End | 40 | 2 | 40 | Sprint 1 Complete |
+| 11/9 | S2 | 38 | 2 | 38 | Functional requirements refinement |
+| 11/10 | S2 | 36 | 2 | 36 | Traceability matrix updates |
+| 11/11 | S2 | 34 | 2 | 34 | PO notes & clarifications |
+| 11/12 | S2 | 32 | 2 | 32 | Sprint 2 wrap-up |
+| 11/13 | S2 End | 30 | 2 | 30 | Sprint 2 Complete |
+| 11/16 | S3 | 28 | 2 | 28 | AWS setup prep |
+| 11/17 | S3 | 26 | 2 | 26 | EC2 instance prep |
+| 11/18 | S3 | 24 | 2 | 24 | Stakeholder feedback integration |
+| 11/19 | S3 | 22 | 2 | 22 | Traceability & documentation |
+| 11/20 | S3 End | 20 | 2 | 20 | Sprint 3 Complete |
+| 11/23 | S4 | 18 | 2 | 18 | Tomcat deployment setup |
+| 11/24 | S4 | 16 | 2 | 16 | Integration prep |
+| 11/25 | S4 | 14 | 2 | 14 | Core servlet skeleton |
+| 11/26 | S4 | 12 | 2 | 12 | Initial routing testing |
+| 11/27 | S4 End | 10 | 2 | 10 | Sprint 4 Complete |
+| 11/30 | S5 | 9 | 1 | 9 | Minor adjustments |
+| 12/1 | S5 | 8 | 1 | 8 | Documentation update |
+| 12/2 | S5 | 7 | 1 | 7 | Integration tweaks |
+| 12/3 | S5 | 6 | 1 | 6 | QA notes |
+| 12/4 | S5 | 5 | 1 | 5 | Sprint 5 prep |
+| 12/5 | S5 End | 4 | 1 | 4 | Sprint 5 Complete |
+| 12/7 | S6 | 4 | 0 | 4 | Sprint 6 Start (Integration) |
+| 12/8 | S6 | 4 | 2 | 2 | LoginServlet wiring |
+| 12/9 | S6 | 2 | 2 | 0 | RegisterServlet wiring |
+| 12/10 | S6 | 0 | 0 | 0 | Core integration complete |
+| 12/11 | S6 End | 0 | 0 | 0 | Sprint 6 Complete |
+| 12/14 | S7 | 0 | 0 | 0 | Sprint 7 Start |
+| 12/15 | S7 | 0 | 1 | 0 | Final UI walkthrough prep |
+| 12/16 | S7 | 0 | 1 | 0 | Final testing adjustments |
+| 12/17 | S7 | 0 | 1 | 0 | Bug fixes & refinements |
+| 12/18 | S7 Due | 0 | 0 | 0 | Project Complete |
+---
+### 📈 Thasneem – Personal Burndown
+
+| Date | Sprint | Ideal Remaining | Points Done Today | Actual Remaining | Notes |
+|-----|--------|-----------------|-------------------|------------------|-------|
+| 11/16 | S3 | 50 | 0 | 50 | Sprint 3 Start |
+| 11/17 | S3 | 45 | 5 | 45 | UI research |
+| 11/18 | S3 | 40 | 5 | 40 | Schema draft |
+| 11/19 | S3 | 35 | 5 | 35 | GitHub repo & Kanban |
+| 11/20 | S3 End | 30 | 5 | 30 | Sprint 3 Complete |
+| 11/23 | S4 | 30 | 0 | 30 | Sprint 4 Start |
+| 11/24 | S4 | 25 | 5 | 25 | userDashboard.jsp |
+| 11/25 | S4 | 20 | 5 | 20 | profile.jsp |
+| 11/26 | S4 | 15 | 5 | 15 | UI refinement |
+| 11/27 | S4 End | 10 | 5 | 10 | Sprint 4 Complete |
+| 11/30 | S5 | 10 | 0 | 10 | Sprint 5 Start |
+| 12/1 | S5 | 8 | 2 | 8 | Repo restructuring |
+| 12/2 | S5 | 6 | 2 | 6 | Requirements update |
+| 12/3 | S5 | 4 | 2 | 4 | Schema revision |
+| 12/5 | S5 End | 2 | 2 | 2 | Sprint 5 Complete |
+| 12/7 | S6 | 2 | 0 | 2 | Sprint 6 Start (JSPs) |
+| 12/8 | S6 | 0 | 6 | 0 | workoutHistory & viewSession.jsp |
+| 12/9 | S6 | 0 | 6 | 0 | logWorkout & editPlan.jsp |
+| 12/10 | S6 | 0 | 6 | 0 | error & planDetails.jsp |
+| 12/11 | S6 End | 0 | 0 | 0 | JSP Work Complete |
+| 12/15 | S7 | 0 | 2 | 0 | Schema final |
+| 12/16 | S7 | 0 | 2 | 0 | User/Admin manual |
+| 12/18 | S7 Due | 0 | 0 | 0 | Project Complete |
+---
+
+### 📈 Ali – Personal Burndown (Detailed)
+
+| Date | Sprint | Ideal Remaining | Points Done Today | Actual Remaining | Notes |
+|-----|--------|-----------------|-----------------|-----------------|-------|
+| 11/16 | S3 | 30 | 0 | 30 | Sprint 3 Start |
+| 11/17 | S3 | 28 | 2 | 28 | Front-end research |
+| 11/18 | S3 | 26 | 2 | 26 | Testing framework prep |
+| 11/19 | S3 | 24 | 2 | 24 | Diagram prep |
+| 11/20 | S3 End | 22 | 2 | 22 | Sprint 3 Complete |
+| 11/21 | --- | 22 | 0 | 22 | ============================== |
+| 11/23 | S4 | 22 | 0 | 22 | Sprint 4 Start |
+| 11/24 | S4 | 20 | 2 | 20 | index.jsp & register.jsp |
+| 11/25 | S4 | 18 | 2 | 18 | adminDashboard.jsp base |
+| 11/26 | S4 | 16 | 2 | 16 | Pending approval page |
+| 11/27 | S4 End | 14 | 2 | 14 | Sprint 4 Complete |
+| 11/28 | --- | 14 | 0 | 14 | ============================== |
+| 11/30 | S5 | 14 | 0 | 14 | Sprint 5 Start |
+| 12/1 | S5 | 12 | 2 | 12 | Architecture diagram update |
+| 12/2 | S5 | 10 | 2 | 10 | Sequence diagram update |
+| 12/3 | S5 | 8 | 2 | 8 | UI screenshots prep |
+| 12/4 | S5 | 6 | 2 | 6 | Use-case diagram review |
+| 12/5 | S5 End | 4 | 4 | 4 | Sprint 5 Complete |
+| 12/6 | --- | 4 | 0 | 4 | ============================== |
+| 12/7 | S6 | 4 | 0 | 4 | Sprint 6 Start (Testing & Integration) |
+| 12/8 | S6 | 2 | 2 | 2 | Initial UI testing |
+| 12/9 | S6 | 0 | 2 | 0 | Final UI testing & screenshots |
+| 12/10 | S6 End | 0 | 0 | 0 | Sprint 6 Complete |
+| 12/14 | S7 | 0 | 0 | 0 | Sprint 7 Start |
+| 12/15 | S7 | 0 | 0 | 0 | Integration verification |
+| 12/16 | S7 | 0 | 0 | 0 | Final review |
+| 12/18 | S7 Due | 0 | 0 | 0 | Project Complete |
+
