@@ -11,7 +11,7 @@
 </br>
 
 ---
-## 📅 Sprint 1 – Discovery Phase
+## 📅 Sprint 1 – Discovery Phase 1
 **Duration:** Week 1 (11/2/25 – 11/8/25)
 >**Goal:** Understand the problem domain, define key system actors, and gather initial requirements.
 
@@ -25,7 +25,7 @@
 
 ---
 
-## 📅 Sprint 2 – Requirements Refinement
+## 📅 Sprint 2 – Discovery Phase 2
 **Duration:** Week 2 (11/9/25 – 11/15/25)
 >**Goal:** Refine requirements, update system architecture, and finalize the initial product backlog.
 
@@ -39,7 +39,7 @@
 
 ---
 
-## 📅 Sprint 3 – Transition to Development
+## 📅 Sprint 3 – Requirements Refinement
 **Duration:** Week 3 (11/16/25 – 11/22/25)
 >**Goal:** Finalize discovery documentation and prepare technical foundations for the coding phase.
 
@@ -53,7 +53,7 @@
 
 ---
 
-## 📅 Sprint 4 – Frontend UI Development (Phase 1)
+## 📅 Sprint 4 – Transition to Development
 **Duration:** Week 4 (11/23/25 – 11/29/25)
 >**Goal:** Complete foundational setup (Servlets/JSP project) and develop initial core user views.
 
