@@ -105,7 +105,6 @@ Person A Tasks
 
 
 
-
 Sprint 7 Burn-Down Chart – Ali (Person A)
 
 Due: End of Sprint 7
@@ -113,9 +112,10 @@ Total Tasks: 4
 
 Burn-Down Data
 
-| Day   | Date   | Work Hours | Ideal Remaining | Actual |
-| ----- | ------ | ---------- | --------------- | ------ |
-| Day 1 | Week 7 | 5PM–6:30PM | 4               | 0      |
+| Day   | Date   | Work Hours     | Ideal Remaining | Actual |
+| ----- | ------ | -------------- | --------------- | ------ |
+| Day 1 | Week 7 | 5:00PM–6:30PM  | 4               | 2      |
+| Day 2 | Week 7 | 6:30PM–10:30PM | 2               | 0      |
 
 Person A Tasks
 
@@ -123,6 +123,8 @@ Person A Tasks
 2. Verified the live website functionality in collaboration with Bryan by checking all core features and workflows.
 3. Tested overall system stability to ensure the application was working correctly in a live environment.
 4. Deployed and consolidated the complete codebase on AWS after confirming all functionalities were working as expected.
+
+
 
 
 
