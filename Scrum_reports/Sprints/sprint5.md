@@ -1,3 +1,0 @@
-Sprint 5 Goal:
-Re-enter the discovery phase and redefine the system around our three final actors — User, Admin, and System. This includes removing the Coach actor and all pricing/subscription features, rewriting stakeholder requirements, updating all use cases and diagrams, and realigning our requirements and architecture so that every function clearly maps to one or more of these three actors: User, Admin, and System.During Sprint 5, we formally committed to a three-actor model: **User (end user of the app), Admin (management and oversight), and System (backend logic, database, and services). All requirements, diagrams, and future sprints are now based only on these three actors.”
-
