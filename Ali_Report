@@ -107,15 +107,23 @@ Person A Tasks
 
 
 Sprint 7 Burn-Down Chart – Ali (Person A)
+
 Due: End of Sprint 7
-Total Tasks: 1
+Total Tasks: 4
+
 Burn-Down Data
+
 | Day   | Date   | Work Hours | Ideal Remaining | Actual |
 | ----- | ------ | ---------- | --------------- | ------ |
-| Day 1 | Week 7 | 5PM–6:30PM | 2               | 0      |
+| Day 1 | Week 7 | 5PM–6:30PM | 4               | 0      |
 
 Person A Tasks
-1.Took live UI screenshots based on Thasneema’s updated User and Admin dashboard code and uploaded them to GitHub
+
+1. Took live UI screenshots based on Thasneema’s updated User and Admin dashboard code and uploaded them to GitHub.
+2. Verified the live website functionality in collaboration with Bryan by checking all core features and workflows.
+3. Tested overall system stability to ensure the application was working correctly in a live environment.
+4. Deployed and consolidated the complete codebase on AWS after confirming all functionalities were working as expected.
+
 
 
 
@@ -141,5 +149,8 @@ and usability needs. Their feedback helped define account management features an
 
 Took live UI screenshots based on Thasneema’s updated User and Admin dashboard code and uploaded them to GitHub.
 
+Additionally, I worked closely with Bryan to finalize the system by verifying that the live website was functioning correctly, 
+testing all core features and workflows, and ensuring overall system stability. After confirming that all functionalities were working 
+as expected, we deployed and consolidated the complete codebase on AWS to set up the live environment.
 
 
