@@ -17,7 +17,7 @@
 
 | Name & Role | Contribution Focus | Burndown Chart URL |
 | :--- | :--- | :--- |
-| **Sonu** - Scrum Master | Facilitated the first meeting; ensured Scrum discipline. | `[Pending]` |
+| **Sonu** - Scrum Master | Facilitated the first meeting; ensured Scrum discipline. | [Sprint1](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/b2ffb2bd7f5dfe810d225278ed61c2cbae09fd5f/25844A92-DDDA-4977-BAAC-B1E1D3A3E66D.png) |
 | **Bryan** - Product Owner | Identified system actors and drafted initial stakeholder interview questions. | `[Pending]` |
 | **Thasneem** - Front-End Coordinator | *Joined 11/11/25 (Post-Sprint)* | [FullSprint](https://cuny-my.sharepoint.com/:x:/g/personal/thasneem_mohamed29_qmail_cuny_edu/IQBK3DB92BtbSJ9Zq57A47ayAZRfgrPPJzGx3wlJGkgYKJw?e=lngZrh) |
 | **Ali** - Front-End Developer | *Not Yet Active* | `[Pending]` |
