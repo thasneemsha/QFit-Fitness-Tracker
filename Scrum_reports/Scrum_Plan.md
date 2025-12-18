@@ -73,7 +73,7 @@
 
 | Name & Role | Contribution Focus | Burndown Chart URL | code base |
 | :--- | :--- | :--- | :--- |
-| **Sonu** - Scrum Master/Backend | Updated stakeholder requirements and documentation. Wrote Sprint/Scrum reports, README, and GitHub introduction. | `[Pending]` |
+| **Sonu** - Scrum Master/Backend | Updated stakeholder requirements and documentation. Wrote Sprint/Scrum reports, README, and GitHub introduction. | [sprint5](https://1drv.ms/x/c/9dd64dedc5739ac5/IQA1NUiNxBngSJtcnIRbpfORAWmkyg6U0GGKCcoya_BV0Zk?e=QId2oR)|
 | **Bryan** - Product Owner/Integration | Updated functional requirements and revised interview questions. | [Sprint5](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/7e2f423b19ecfe32aac2691f5e1cac3143cc3930/Sprint5.png) |
 | **Thasneem** - Front-End/Schema | Established the foundational GitHub repository structure and project management framework. (GitHub Setup, Issues, Kanban/Sprints,...) | [Sprint-5](https://cuny-my.sharepoint.com/:x:/g/personal/thasneem_mohamed29_qmail_cuny_edu/IQBK3DB92BtbSJ9Zq57A47ayAZRfgrPPJzGx3wlJGkgYKJw?e=vkFpHa&nav=MTVfe0IyOUVERjU1LUE3MTAtNEFDOC04MEYyLTdFMUMzRjY1QjkyQX0) | `[--]`
 | **Ali** - Front-End Developer/Tester | Updated architecture and sequence diagrams (v2) to align with the new system flows. | [sprint-Ali](https://cuny-my.sharepoint.com/:x:/g/personal/thasneem_mohamed29_qmail_cuny_edu/IQBsuq-rGAzxQb49GqtcMnvAAYKY5oklx3uytTLhZdOZoRs?e=yKv2QG&nav=MTVfezAwMDAwMDAwLTAwMDEtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMH0) |
