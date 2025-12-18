@@ -32,7 +32,7 @@
 | Name & Role | Contribution Focus | Burndown Chart URL |
 | :--- | :--- | :--- |
 | **Sonu** - Scrum Master | Updated use case diagrams; adjusted scope (removed location modules). | `[Pending]` |
-| **Bryan** - Product Owner | Clarified and reorganized functional requirements; revised system description. | `[Pending]`  |
+| **Bryan** - Product Owner | Clarified and reorganized functional requirements; revised system description. | [Sprint2](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/b829154ee53b92578ac57d3deecd89196b076e62/Sprint2.png)  |
 | **Thasneem** - Front-End Coordinator | *Initial team onboarding.* (started personal Interviews) | [FullSprint](https://cuny-my.sharepoint.com/:x:/g/personal/thasneem_mohamed29_qmail_cuny_edu/IQBK3DB92BtbSJ9Zq57A47ayAZRfgrPPJzGx3wlJGkgYKJw?e=lngZrh) |
 | **Ali** - Front-End Developer | *Not Yet Active* | [sprint-Ali](https://cuny-my.sharepoint.com/:x:/g/personal/thasneem_mohamed29_qmail_cuny_edu/IQBsuq-rGAzxQb49GqtcMnvAAYKY5oklx3uytTLhZdOZoRs?e=yKv2QG&nav=MTVfezAwMDAwMDAwLTAwMDEtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMH0) |
 <br>
