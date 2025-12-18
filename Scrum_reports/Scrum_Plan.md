@@ -60,7 +60,7 @@
 | Name & Role | Contribution Focus | Burndown Chart URL | code base |
 | :--- | :--- | :--- | :--- |
 | **Sonu** - Backend Lead | Created Eclipse project structure; configured Servlets environment; Implemented initial User Data Access Objects (DAOs). | `[Pending]` |
-| **Bryan** - Backend Integration | Set up Tomcat deployment pipeline; implemented core CSS framework and styling (for integration layer). | `[Pending]` |
+| **Bryan** - Backend Integration | Set up Tomcat deployment pipeline; implemented core CSS framework and styling (for integration layer). | [Sprint4](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/d912c5523dbd9f15d5ffb029a54ddfc70b217a02/Sprint4.png) |
 | **Thasneem** - Front-End/Schema | Developed **`userDashboard.jsp`** and the base structure for **`profile.jsp`**. | [Sprint-4](https://cuny-my.sharepoint.com/:x:/g/personal/thasneem_mohamed29_qmail_cuny_edu/IQBK3DB92BtbSJ9Zq57A47ayAZRfgrPPJzGx3wlJGkgYKJw?e=BY0wgA&nav=MTVfe0RDMkM5Q0I4LUFGMzgtNEVDRC1BRTBELUM1ODk5NTFGNTlEQX0) | [userDashboard.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/userDashboard.jsp), [profile.jsp](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/8c6d13973641dd9894ef126eafa1489d45a63e9f/src/main/webapp/profile.jsp)
 | **Ali** - Front-End Developer | Developed **`index.jsp` (Login Page)**,**`register.jsp`**,**`pendingAproval.jsp`**, and the **`adminDashboard.jsp`**. | `[Pending]` | [sprint-Ali](https://cuny-my.sharepoint.com/:x:/g/personal/thasneem_mohamed29_qmail_cuny_edu/IQBsuq-rGAzxQb49GqtcMnvAAYKY5oklx3uytTLhZdOZoRs?e=yKv2QG&nav=MTVfezAwMDAwMDAwLTAwMDEtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMH0)
 <br>
