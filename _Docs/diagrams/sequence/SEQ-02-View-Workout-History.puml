@@ -1,0 +1,40 @@
+@startuml
+title SEQ-02 - View Workout History (UC-01B / FR-3)
+
+actor User
+boundary "Web Browser (UI)" as UI
+control "WorkoutController\n(Servlet/JSP)" as Controller
+control "WorkoutService" as Service
+entity "WorkoutDAO" as DAO
+database "MySQL Database" as DB
+
+User -> UI : Click "Workout History"
+UI -> Controller : GET /workouts/history
+
+Controller -> Service : getWorkoutHistory(userId,\nfilters?)
+Service -> DAO : findWorkoutsByUser(userId,\nfilters?)
+
+DAO -> DB : SELECT workouts\nWHERE user_id = ?\nAND (optional filters)
+DB --> DAO : rows (workouts)
+DAO --> Service : List<Workout>
+Service --> Controller : workoutList
+
+opt Filters applied (date range / exercise type)
+  note right of Controller
+    FR3.3 Filter by date\nFR3.4 Filter by exercise type
+  end note
+end opt
+
+opt Progress chart data requested
+  Controller -> Service : getProgressData(userId,\nexercise?, dateRange?)
+  Service -> DAO : findProgressData(userId,\nexercise?, dateRange?)
+  DAO -> DB : SELECT aggregated stats\n(for charts/trends)
+  DB --> DAO : rows (chart points)
+  DAO --> Service : chartData
+  Service --> Controller : chartData
+end opt
+
+Controller --> UI : Render Workout History page\n(workoutList + optional charts)
+UI --> User : Display history + charts
+
+@enduml

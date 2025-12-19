@@ -1,0 +1,27 @@
+@startuml
+title QFit - Use Case (Goal Setting)
+left to right direction
+skinparam packageStyle rectangle
+
+actor "User" as User
+
+rectangle "QFit Universal Workout Tracker" {
+  (Create Fitness Goal) as UC_CreateGoal
+  (Edit Fitness Goal) as UC_EditGoal
+  (Mark Goal as Completed) as UC_CompleteGoal
+  (Receive Goal Deadline Reminder) as UC_Reminder
+}
+
+User --> UC_CreateGoal
+User --> UC_EditGoal
+User --> UC_CompleteGoal
+
+UC_Reminder .> UC_CreateGoal : <<extend>>
+UC_Reminder .> UC_EditGoal : <<extend>>
+
+note right of UC_CreateGoal
+  Precondition:
+  User is authenticated (logged in)
+end note
+
+@enduml

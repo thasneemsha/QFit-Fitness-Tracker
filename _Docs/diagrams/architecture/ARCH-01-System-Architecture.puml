@@ -1,0 +1,71 @@
+@startuml
+title QFit Universal Workout Tracker - System Architecture (Apache Reverse Proxy + Tomcat + MySQL + External APIs)
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+
+actor "User" as User
+actor "Admin" as Admin
+
+rectangle "Client Layer" {
+  node "Web Browser\n(HTML / CSS / JS)" as Browser
+}
+
+rectangle "AWS / Server Layer" {
+  node "EC2 Instance" {
+    component "Apache HTTP Server\n- Reverse Proxy (HTTP only)\n- Entry Point: Port 80\n- Static Assets (optional)" as Apache
+    component "Tomcat Application Server\n(Java Web App: Servlets/JSP)\n- Auth & Sessions\n- Accounts / Workouts / Goals / Admin\n- Validation" as Tomcat
+    component "Biometric Sync Service\n- Scheduled daily sync\n- Manual refresh" as SyncSvc
+  }
+}
+
+rectangle "Data Layer" {
+  database "MySQL Database\n(Tables:\nUsers, Workouts,\nGoals, BiometricData,\nRoles)" as MySQL
+}
+
+rectangle "External Services" {
+  component "OAuth 2.0 Authorization\n(Provider Consent + Tokens)" as OAuth
+  cloud "Google Fit API" as GoogleFit
+  cloud "Apple Health API" as AppleHealth
+}
+
+' ---- Client interactions ----
+User --> Browser : Use QFit (User role)
+Admin --> Browser : Use QFit (Admin role)
+
+Browser --> Apache : HTTP requests (Port 80)
+Apache --> Tomcat : Reverse proxy (HTTP)\nPort 8080
+
+' ---- Application & Data ----
+Tomcat --> MySQL : JDBC / SQL\n(Port 3306)
+
+' ---- Biometric integration ----
+Tomcat --> OAuth : Start authorization\n(connect provider)
+OAuth --> GoogleFit : Request consent / tokens
+OAuth --> AppleHealth : Request consent / tokens
+
+SyncSvc --> Tomcat : Trigger sync job\n(daily + manual)
+Tomcat --> GoogleFit : REST API calls\n(sync biometric data)
+Tomcat --> AppleHealth : REST API calls\n(sync biometric data)
+
+note right of Apache
+Current deployment uses HTTP only.
+HTTPS/TLS can be enabled by
+adding a certificate and
+configuring Apache on port 443.
+end note
+
+note right of Tomcat
+Authorization:
+- User vs Admin enforced by roles (FR6.4)
+- Admin actions require authenticated admin session
+end note
+
+note right of SyncSvc
+FR5.3: Daily automatic sync
+FR5.4: Manual refresh available
+FR5.7: Prevent double counting
+handled in application logic
+end note
+
+@enduml

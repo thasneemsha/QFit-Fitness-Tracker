@@ -1,75 +1,79 @@
 # QFit – Validation Traceability Matrix
 
+---
+
 ## 1. Environment / Installation
 
-| Serial | Use Case ID | Test Case ID | Description                                                  | Expected Outcome                                              | Related FR |
-|--------|-------------|--------------|--------------------------------------------------------------|----------------------------------------------------------------|------------|
-| 1      | UC-INST     | TC_INST_01   | Verify Apache, Tomcat, and MySQL services are running        | All services start successfully                               | ENV        |
-| 2      | UC-INST     | TC_INST_02   | Verify HTTPS via Apache reverse proxy                        | Secure login page loads without certificate warning           | ENV        |
+| # | Use Case ID | Test Case ID | Description | Expected Outcome | Related FR |
+|---|------------|--------------|-------------|------------------|------------|
+| 1 | UC-INST | TC-INST-01 | Verify Apache, Tomcat, and MySQL services are running | All services start successfully | ENV |
+| 2 | UC-INST | TC-INST-02 | Verify HTTPS via Apache reverse proxy | Secure login page loads without certificate warning | ENV |
 
 ---
 
 ## 2. FR-1: Account Management
 
-| Serial | Use Case ID    | Test Case ID | Description                                      | Expected Outcome                                      | Related FR |
-|--------|----------------|--------------|--------------------------------------------------|-------------------------------------------------------|------------|
-| 3      | UC-FR1-Account | TC_ACC_01    | Register with valid email and password           | Account created, password stored securely            | FR1.1–1.3  |
-| 4      | UC-FR1-Account | TC_ACC_02    | Register with missing email                      | Validation error shown                               | FR1.2      |
-| 5      | UC-FR1-Account | TC_ACC_03    | Login with valid credentials                     | User redirected to dashboard                        | FR1.4–1.5  |
-| 6      | UC-FR1-Account | TC_ACC_04    | Login with incorrect password                   | Login denied                                         | FR1.5      |
-| 7      | UC-FR1-Account | TC_ACC_05    | Reset password through email verification        | Password successfully updated                       | FR1.7      |
+| # | Use Case ID | Test Case ID | Description | Expected Outcome | Related FR |
+|---|------------|--------------|-------------|------------------|------------|
+| 3 | UC-01A | TC-ACC-01 | Register with valid email and password | Account created and credentials stored securely | FR1.1–FR1.3 |
+| 4 | UC-01A | TC-ACC-02 | Register with missing or invalid fields | Validation error displayed | FR1.2 |
+| 5 | UC-01A | TC-ACC-03 | Login with valid credentials | User redirected to dashboard | FR1.4–FR1.5 |
+| 6 | UC-01A | TC-ACC-04 | Login with invalid credentials | Login denied | FR1.5 |
+| 7 | UC-01A | TC-ACC-05 | Reset password via email verification | Password successfully updated | FR1.7 |
 
 ---
 
 ## 3. FR-2: Workout Logging
 
-| Serial | Use Case ID     | Test Case ID | Description                                      | Expected Outcome                                      | Related FR |
-|--------|------------------|--------------|--------------------------------------------------|-------------------------------------------------------|------------|
-| 8      | UC-FR2-Workout  | TC_WO_01     | Log full workout entry                           | Workout saved with timestamp                         | FR2.1–2.9  |
-| 9      | UC-FR2-Workout  | TC_WO_02     | Log workout with missing exercise name           | Save blocked with validation error                   | FR2.2,2.8  |
-| 10     | UC-FR2-Workout  | TC_WO_03     | Enter negative sets or weight                    | Invalid values rejected                              | FR2.3,2.5  |
+| # | Use Case ID | Test Case ID | Description | Expected Outcome | Related FR |
+|---|------------|--------------|-------------|------------------|------------|
+| 8 | UC-01B | TC-WO-01 | Log complete workout entry | Workout saved with timestamp | FR2.1–FR2.9 |
+| 9 | UC-01B | TC-WO-02 | Submit workout with missing exercise name | Save blocked with validation error | FR2.2 |
+|10 | UC-01B | TC-WO-03 | Enter negative sets, reps, or weight | Invalid values rejected | FR2.3–FR2.5 |
 
 ---
 
 ## 4. FR-3: Progress Tracking
 
-| Serial | Use Case ID      | Test Case ID | Description                                      | Expected Outcome                                      | Related FR |
-|--------|-------------------|--------------|--------------------------------------------------|-------------------------------------------------------|------------|
-| 11     | UC-FR3-Progress  | TC_PR_01     | View workout history                             | Past workouts displayed                              | FR3.1      |
-| 12     | UC-FR3-Progress  | TC_PR_02     | Filter workout history by date                   | Only selected date range displayed                  | FR3.3      |
-| 13     | UC-FR3-Progress  | TC_PR_03     | View progress chart for exercise                 | Chart renders performance trend                     | FR3.2–3.5  |
+| # | Use Case ID | Test Case ID | Description | Expected Outcome | Related FR |
+|---|------------|--------------|-------------|------------------|------------|
+|11 | UC-01B | TC-PR-01 | View workout history | Workout history displayed | FR3.1 |
+|12 | UC-01B | TC-PR-02 | Filter workouts by date or exercise | Filtered results shown | FR3.3–FR3.4 |
+|13 | UC-01B | TC-PR-03 | View charts and performance trends | Charts rendered correctly | FR3.2–FR3.5 |
 
 ---
 
 ## 5. FR-4: Goal Setting
 
-| Serial | Use Case ID   | Test Case ID | Description                                      | Expected Outcome                                      | Related FR |
-|--------|---------------|--------------|--------------------------------------------------|-------------------------------------------------------|------------|
-| 14     | UC-FR4-Goals  | TC_GOAL_01   | Create new fitness goal                          | Goal saved and visible                               | FR4.1      |
-| 15     | UC-FR4-Goals  | TC_GOAL_02   | Edit an existing goal                            | Goal updated                                         | FR4.2      |
-| 16     | UC-FR4-Goals  | TC_GOAL_03   | Mark goal as completed                           | Goal marked completed                               | FR4.3      |
+| # | Use Case ID | Test Case ID | Description | Expected Outcome | Related FR |
+|---|------------|--------------|-------------|------------------|------------|
+|14 | UC-02 | TC-GOAL-01 | Create a new fitness goal | Goal saved and visible | FR4.1 |
+|15 | UC-02 | TC-GOAL-02 | Edit an existing goal | Goal updated successfully | FR4.2 |
+|16 | UC-02 | TC-GOAL-03 | Mark goal as completed | Goal marked completed | FR4.3 |
+|17 | UC-02 | TC-GOAL-04 | Receive goal deadline reminder (optional) | Reminder notification received | FR4.4 |
 
 ---
 
-## 6. FR-5: Biometric API Integration (Google Fit / Apple Health)
+## 6. FR-5: Biometric Tracking & API Integration
 
-| Serial | Use Case ID   | Test Case ID | Description                                      | Expected Outcome                                      | Related FR |
-|--------|---------------|--------------|--------------------------------------------------|-------------------------------------------------------|------------|
-| 17     | UC-FR5-API    | TC_API_01    | Connect account to Google Fit / Apple Health     | External account linked                              | FR5.1–5.2  |
-| 18     | UC-FR5-API    | TC_API_02    | Automatic daily sync                             | Biometric data stored daily                          | FR5.3,5.6  |
-| 19     | UC-FR5-API    | TC_API_03    | Manual refresh of biometric data                | Dashboard updates immediately                       | FR5.4      |
-| 20     | UC-FR5-API    | TC_API_04    | Prevent double counting                          | No duplicate data shown                              | FR5.7      |
-| 21     | UC-FR5-API    | TC_API_05    | Disconnect health account                        | API sync stopped                                     | FR5.8      |
-| 22     | UC-FR5-API    | TC_API_06    | Handle API sync error                            | Error shown, system remains stable                  | FR5.9      |
+| # | Use Case ID | Test Case ID | Description | Expected Outcome | Related FR |
+|---|------------|--------------|-------------|------------------|------------|
+|18 | UC-03 | TC-API-01 | Connect Google Fit / Apple Health | External provider authorized | FR5.1–FR5.2 |
+|19 | UC-03 | TC-API-02 | Automatic daily biometric sync | Data synced and stored | FR5.3 |
+|20 | UC-03 | TC-API-03 | Manual biometric data refresh | Dashboard updates immediately | FR5.4 |
+|21 | UC-03 | TC-API-04 | Display biometric data on dashboard | Data visible to user | FR5.5 |
+|22 | UC-03 | TC-API-05 | Prevent duplicate biometric entries | No double counting occurs | FR5.7 |
+|23 | UC-03 | TC-API-06 | Disconnect external provider | Sync stopped successfully | FR5.8 |
+|24 | UC-03 | TC-API-07 | Handle biometric sync error | Error notification displayed | FR5.9 |
 
 ---
 
 ## 7. FR-6: Admin Features
 
-| Serial | Use Case ID   | Test Case ID | Description                                      | Expected Outcome                                      | Related FR |
-|--------|---------------|--------------|--------------------------------------------------|-------------------------------------------------------|------------|
-| 23     | UC-FR6-Admin  | TC_ADM_01    | Admin views all users                            | User list visible                                    | FR6.1      |
-| 24     | UC-FR6-Admin  | TC_ADM_02    | Admin deactivates a user                        | User cannot log in                                   | FR6.2      |
-| 25     | UC-FR6-Admin  | TC_ADM_03    | Deactivated user attempts login                 | Login blocked                                        | FR6.2      |
-| 26     | UC-FR6-Admin  | TC_ADM_04    | Admin resets password                           | Password reset successful                           | FR6.3      |
-| 27     | UC-FR6-Admin  | TC_ADM_05    | Admin changes user role                         | New role applied                                    | FR6.4      |
+| # | Use Case ID | Test Case ID | Description | Expected Outcome | Related FR |
+|---|------------|--------------|-------------|------------------|------------|
+|25 | UC-04 | TC-ADM-01 | Admin views all user profiles | User list displayed | FR6.1 |
+|26 | UC-04 | TC-ADM-02 | Admin activates/deactivates account | Account status updated | FR6.2 |
+|27 | UC-04 | TC-ADM-03 | Deactivated user attempts login | Login blocked | FR6.2 |
+|28 | UC-04 | TC-ADM-04 | Admin resets user password | Password reset completed | FR6.3 |
+|29 | UC-04 | TC-ADM-05 | Admin manages system roles | Role updated successfully | FR6.4 |
