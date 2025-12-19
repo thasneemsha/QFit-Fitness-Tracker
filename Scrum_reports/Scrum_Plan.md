@@ -48,7 +48,7 @@
 | **Sonu** - Scrum Master/Backend | Managed sprint progression; prepared team role split for development tasks. | [sprint3](https://1drv.ms/x/c/9dd64dedc5739ac5/IQDt8ZeWB2vBS41rmseIglnTAfY2af1jekt7F1fKc3tXU1Y?e=VR5QiF)|
 | **Bryan** - Product Owner | Completed stakeholder interviews, updated requirements, finished Traceability Matrix, prepared AWS infrastructure. | [Sprint3](https://github.com/thasneemsha/QFit-Fitness-Tracker/blob/2b2fa1a2ef2b498881f5923af2678ef7b6b535f8/Sprint3.png) |
 | **Thasneem** - Front-End/Schema | Created GitHub repository; researched web UI structure; began designing database schemas (initial conceptual phase only). | [Sprint-3](https://cuny-my.sharepoint.com/:x:/g/personal/thasneem_mohamed29_qmail_cuny_edu/IQBK3DB92BtbSJ9Zq57A47ayAZRfgrPPJzGx3wlJGkgYKJw?e=hc1rJF&nav=MTVfe0ZBNjQ5MjAzLTI2MTAtNDUzNi05NTA5LUUzNjMwQjdEODhEMn0) |
-| **Ali** - Front-End Developer | Researched front-end testing frameworks (initial preparation). | [sprint-Ali](https://1drv.ms/x/c/80bb6e52d2ef5bb2/IQBuHr5iqQRnR5bfVddZN7TmAYjGN7qdZkd74ncXKz8d3l8?e=wtDMXR) |
+| **Ali** - Front-End Developer | Researched front-end testing frameworks (initial preparation). | [sprint-Ali](https://1drv.ms/x/c/80bb6e52d2ef5bb2/IQCvJl3igrQ4T4ryK5_0f5o5AcFCeViNtvxLdb2oiZhLZpE?e=twsGmy) |
 <br>
 
 ---
