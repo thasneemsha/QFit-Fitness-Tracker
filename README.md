@@ -1,58 +1,126 @@
-# Q-Fit: Gym Progress Tracking Web Application
+# QFit – Individual Sprint Contributions (Bryan Beltran)
 
-## 1. Project Introduction
-Q-Fit is a free, student-friendly gym progress tracker developed for CS 370 that focuses on simplicity, reliability, and academic usefulness. The system allows students and casual gym-goers to easily log workouts, record body weight and optional body-fat percentage, view clear progress dashboards with charts and streaks, and upload a profile picture — all at zero cost and with no unnecessary complexity.
-
-Built using JSP for the presentation layer, Java servlets for processing, JSON-based API communication, MySQL for persistent storage, and deployed on an AWS EC2 instance running Apache Tomcat, Q-Fit is a classic three-tier web application that demonstrates textbook software engineering principles.
-
-The project fully supports the three required actors as specified:
-
-- **User (Student/Gym Member)** – the primary actor who tracks personal progress  
-- **Admin** – the secondary actor responsible for system integrity and user oversight  
-- **System** – the automated services that store data, generate charts, calculate streaks, and validate inputs  
-
-This clean, minimal scope deliberately excludes any coach, payment, subscription, or social features so the team can deliver a polished, fully functional system within the semester timeline.
+This branch documents my **individual contributions** to the **QFit Universal Fitness Tracker** project across **seven sprints**, covering planning, backend development, integration, deployment preparation, and final stabilization.  
+Progress was tracked using a **burndown approach**, with story points completed incrementally per sprint.
 
 ---
 
-## 2. Problem Statement
-Most students who start going to the gym abandon consistent tracking within weeks because:
+## Sprint 1 – Project Initiation & Planning  
+**Dates:** Nov 2 – Nov 7  
+**Focus:** Product ownership setup and early planning
 
-- Existing free apps are overloaded with ads, paywalls, or social features they don’t need  
-- Paid apps are too expensive for student budgets  
-- Simple tools (Google Sheets, notebooks) lack automatic charts and streak motivation  
-- There is no lightweight, trustworthy web app that just works without accounts costing money or requiring constant updates  
+**Work completed:**
+- Initial Product Owner (PO) setup
+- Requirements gathering and clarification
+- Stakeholder interview preparation
+- Sprint wrap-up and planning alignment
 
-Q-Fit directly solves these student-specific pain points by providing a completely free, ad-free, login-protected web application that is simple enough for daily use yet powerful enough to show real progress through automatic charts and streaks.
-
----
-
-## 3. Meet the Team
-
-| Name      | Role                                   | Key Responsibilities |
-|-----------|----------------------------------------|-----------------------|
-| **Sonu**      | Scrum Master & Backend Developer       | Java Servlets, authentication, workout logic, sprint planning, scrum reports, GitHub monitoring & structuring |
-| **Bryan**     | DevOps Engineer & AWS/Tomcat Manager   | AWS EC2 setup, Apache/Tomcat configuration, production deployment & monitoring |
-| **Thasneem**  | Frontend Developer & UI/UX Lead        | JSP/HTML/CSS pages, creating wireframes, responsive UI forms, GitHub repo |
-| **Ali**       | QA Tester & Documentation Lead         | Testing (dev & prod), bug tracking, diagrams, collaboration with Thasneem for UI/UX designs |
+**Outcome:**  
+Established the project foundation, clarified goals, and aligned expectations with stakeholders.
 
 ---
 
-## 4. Strengths and Weaknesses of Q-Fit
+## Sprint 2 – Requirements & Traceability  
+**Dates:** Nov 9 – Nov 13  
+**Focus:** Functional refinement and documentation accuracy
 
-### Strengths
-- Clean, minimal scope – exactly matches final approved SRS, no feature creep  
-- Full three-actor implementation (User, Admin, System) with clear separation  
-- Production-grade deployment on AWS EC2 + Apache + Tomcat with real uptime  
-- Proper SCRUM discipline: sprints, WAR builds, dev/prod environments  
-- Secure practices: password hashing, prepared statements, file-type validation  
-- Clear traceability from requirements → design → implementation → testing  
-- Excellent documentation and acceptance criteria met 100%
+**Work completed:**
+- Functional requirements refinement
+- Traceability matrix updates
+- PO notes and requirement clarifications
+- Sprint review and closure
 
-### Weaknesses
-- No mobile app (web-only); students must open browser on phone  
-- Limited chart types (basic line/bar only, no advanced analytics)  
-- No password recovery flow (intentionally scoped out)  
-- No automated unit/integration tests (only manual QA by Ali)  
-- Dashboard load time can reach ~2.8 s on first visit (caching not implemented)  
-- No dark mode or advanced responsive tweaks for very small screens  
+**Outcome:**  
+Ensured requirements were well-defined and traceable to system features.
+
+---
+
+## Sprint 3 – Infrastructure & Feedback Integration  
+**Dates:** Nov 16 – Nov 20  
+**Focus:** Deployment preparation and documentation consistency
+
+**Work completed:**
+- AWS environment preparation
+- EC2 instance setup planning
+- Stakeholder feedback integration
+- Traceability and documentation updates
+
+**Outcome:**  
+Prepared the project for cloud deployment and incorporated stakeholder feedback.
+
+---
+
+## Sprint 4 – Backend Structure & Routing  
+**Dates:** Nov 23 – Nov 27  
+**Focus:** Core backend setup and routing validation
+
+**Work completed:**
+- Tomcat deployment setup
+- Backend integration preparation
+- Core servlet skeleton implementation
+- Initial routing and request handling tests
+
+**Outcome:**  
+Delivered a functional backend structure ready for feature integration.
+
+---
+
+## Sprint 5 – Stabilization & Documentation  
+**Dates:** Nov 30 – Dec 5  
+**Focus:** Refinement and quality assurance
+
+**Work completed:**
+- Minor backend and configuration adjustments
+- Documentation updates
+- Integration tweaks
+- QA notes and validation
+- Sprint preparation and close-out
+
+**Outcome:**  
+Focused on system stability, correctness, and documentation readiness.
+
+---
+
+## Sprint 6 – Core Integration  
+**Dates:** Dec 7 – Dec 11  
+**Focus:** Authentication, session handling, and dashboard integration
+
+**Work completed:**
+- Login and authentication wiring
+- Registration flow integration
+- Session handling and authorization logic
+- Dashboard data wiring (calendar and chart services)
+- Completion of core backend integration
+
+**Outcome:**  
+Completed the main functional backend integration of the system.
+
+---
+
+## Sprint 7 – Finalization & Bug Fixes  
+**Dates:** Dec 14 – Dec 18  
+**Focus:** Final testing, refinements, and delivery preparation
+
+**Work completed:**
+- Final UI walkthrough preparation
+- Testing adjustments and bug fixes
+- Backend refinements and cleanup
+- Project completion activities
+
+**Outcome:**  
+Finalized the system for submission and demonstration.
+
+---
+
+## Burndown Summary
+- Initial scope: **50 story points**
+- Incremental completion across **7 sprints**
+- Remaining points reduced to **0**
+- Project completed by **December 18**
+
+---
+
+## Notes
+- This branch reflects **individual contributions only**
+- Team members worked in parallel on additional components
+- Build artifacts (e.g., `target/`) were intentionally excluded from version control
