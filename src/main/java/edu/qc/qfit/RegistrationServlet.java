@@ -38,7 +38,9 @@ public class RegistrationServlet extends HttpServlet {
 
     if (isEmpty(fullName)) error = "Full name is required.";
     else if (isEmpty(email)) error = "Email is required.";
-    else if (!email.toLowerCase().endsWith("@qmail.cuny.edu")) error = "Email must end with @qmail.cuny.edu.";
+    else if (!isAllowedCunyEmail(email)) {
+      error = "Please use a CUNY email (e.g., @qc.cuny.edu or @qmail.cuny.edu).";
+    }
     else if (isEmpty(password) || isEmpty(confirmPassword)) error = "Password and confirm password are required.";
     else if (!password.equals(confirmPassword)) error = "Passwords do not match.";
     else if (isEmpty(heightStr) || isEmpty(weightStr)) error = "Height and weight are required.";
@@ -105,6 +107,21 @@ public class RegistrationServlet extends HttpServlet {
     // IMPORTANT: do NOT forward directly to /WEB-INF/views/*.jsp
     // Always go through a servlet.
     resp.sendRedirect(req.getContextPath() + "/PendingApprovalServlet");
+  }
+
+  /**
+   * Allow:
+   *  - @cuny.edu
+   *  - any subdomain of cuny.edu, e.g. @qc.cuny.edu, @qmail.cuny.edu, etc.
+   */
+  private static boolean isAllowedCunyEmail(String email) {
+    if (email == null) return false;
+    String e = email.trim().toLowerCase();
+    int at = e.lastIndexOf('@');
+    if (at < 0 || at == e.length() - 1) return false;
+
+    String domain = e.substring(at + 1);
+    return domain.equals("cuny.edu") || domain.endsWith(".cuny.edu");
   }
 
   private static void savePart(Part part, Path dest) throws IOException {
